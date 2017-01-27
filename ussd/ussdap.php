@@ -12,7 +12,7 @@ require 'db.php';
 $production=false;
 
 	if($production==false){
-		$ussdserverurl ='http://localhost:7000/ussd/send';
+		$ussdserverurl ='http://drawningbunny.azurewebsites.net/ussd/ussdap.php';
 	}
 	else{
 		$ussdserverurl= 'https://api.dialog.lk/ussd/send';
@@ -20,7 +20,7 @@ $production=false;
 
 
 $receiver 	= new UssdReceiver();
-$sender 	= new UssdSender($ussdserverurl,'APP_000001','password');
+$sender 	= new UssdSender($ussdserverurl,'APP_033050','2749bbeadec3a2907eff38dd8e389bcc');
 $operations = new Operations();
 
 $receiverSessionId = $receiver->getSessionId();
