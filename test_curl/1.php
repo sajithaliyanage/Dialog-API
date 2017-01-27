@@ -1,5 +1,5 @@
 <?php
-
+/*
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
 // Set some options - we are passing in a useragent too here
@@ -22,5 +22,7 @@ if(!$resp){
 }
 
 // Close request to clear up some resources
-curl_close($curl);
+curl_close($curl);*/
+$array = array("message"=>"Ado goda","destinationAddresses"=>["2332"],"password"=>11111,"applicationId"=>0000);
+echo json_encode($array);
 ?>

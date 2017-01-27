@@ -13,7 +13,24 @@ try{
 	
 	//send SMS to applier
 	$array = array("message"=>"Ado goda","destinationAddresses"=>["$address"],"password"=>APP_PASSWORD,"applicationId"=>APP_ID);
+	$val = json_encode($array);
+	
+	$curl = curl_init();
+	curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+	// Set some options - we are passing in a useragent too here
+	curl_setopt_array($curl, array(
+    CURLOPT_RETURNTRANSFER => 1,
+    CURLOPT_URL => 'https://api.dialog.lk/sms/send',
+    CURLOPT_USERAGENT => 'Codular Sample cURL Request',
+    CURLOPT_POST => 1,
+    CURLOPT_POSTFIELDS => array("message"=>"Ado goda","destinationAddresses"=>["$address"],"password"=>APP_PASSWORD,"applicationId"=>APP_ID)
+	));
+	// Send the request & save response to $resp
+	curl_exec($curl);
 
+
+	// Close request to clear up some resources
+	curl_close($curl);
 
 }catch(Exception $e){
 	
