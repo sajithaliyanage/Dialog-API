@@ -9,10 +9,10 @@ try{
 	// Creating a receiver and intialze it with the incomming data
 	$jsonData = json_decode(file_get_contents('php://input'), true);
 	$message = $jsonData['message'];
-	$address = $jsonData['address'];
+	$address = $jsonData['sourceAddress'];
 	$logmsg = $message."-".$address;
 	$file = fopen("log2.txt","a+");
-	fwrite($file,$logmsg." \n");
+	fwrite($file,json_encode($logmsg)." \n");
 	fclose($file);
 	
 	//send SMS to applier
