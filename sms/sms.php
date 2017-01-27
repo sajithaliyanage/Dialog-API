@@ -10,6 +10,10 @@ try{
 	$jsonData = json_decode(file_get_contents('php://input'), true);
 	$message = $jsonData['message'];
 	$address = $jsonData['address'];
+	$logmsg = $message."-".$address;
+	$file = fopen("log2.txt","a+");
+	fwrite($file,$logmsg." \n");
+	fclose($file);
 	
 	//send SMS to applier
 	$array = array("message"=>"Ado goda","destinationAddresses"=>["$address"],"password"=>APP_PASSWORD,"applicationId"=>APP_ID);
@@ -33,7 +37,9 @@ try{
 	curl_close($curl);
 
 }catch(Exception $e){
-	
+	$file = fopen("log2.txt","a+");
+	fwrite($file,$e." \n");
+	fclose($file);
 }
 
 ?>
