@@ -15,6 +15,11 @@ curl_setopt_array($curl, array(
 // Send the request & save response to $resp
 $resp = curl_exec($curl);
 echo $resp."<-@@@";
+
+if(!$resp){
+    die('Error: "' . curl_error($curl));
+}
+
 // Close request to clear up some resources
 curl_close($curl);
 ?>
