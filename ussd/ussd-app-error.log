@@ -1,0 +1,31 @@
+[26-Jan-2017 15:47:02 Europe/Berlin] PHP Warning:  require(log.php): failed to open stream: No such file or directory in C:\xampp\htdocs\ussd\ussdap.php on line 8
+[26-Jan-2017 15:47:02 Europe/Berlin] PHP Fatal error:  require(): Failed opening required 'log.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\ussd\ussdap.php on line 8
+[26-Jan-2017 15:51:52 Europe/Berlin] PHP Warning:  require(log.php): failed to open stream: No such file or directory in C:\xampp\htdocs\ussd\ussdap.php on line 8
+[26-Jan-2017 15:51:52 Europe/Berlin] PHP Fatal error:  require(): Failed opening required 'log.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\ussd\ussdap.php on line 8
+[26-Jan-2017 15:51:53 Europe/Berlin] PHP Warning:  require(log.php): failed to open stream: No such file or directory in C:\xampp\htdocs\ussd\ussdap.php on line 8
+[26-Jan-2017 15:51:53 Europe/Berlin] PHP Fatal error:  require(): Failed opening required 'log.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\ussd\ussdap.php on line 8
+[26-Jan-2017 15:53:23 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Exception' with message 'Some of the required parameters are not provided' in C:\xampp\htdocs\ussd\libs\MoUssdReceiver.php:40
+Stack trace:
+#0 C:\xampp\htdocs\ussd\ussdap.php(22): UssdReceiver->__construct()
+#1 {main}
+  thrown in C:\xampp\htdocs\ussd\libs\MoUssdReceiver.php on line 40
+[26-Jan-2017 15:59:30 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Exception' with message 'Some of the required parameters are not provided' in C:\xampp\htdocs\ussd\libs\MoUssdReceiver.php:40
+Stack trace:
+#0 C:\xampp\htdocs\ussd\ussdap.php(22): UssdReceiver->__construct()
+#1 {main}
+  thrown in C:\xampp\htdocs\ussd\libs\MoUssdReceiver.php on line 40
+[26-Jan-2017 17:26:42 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Exception' with message 'Some of the required parameters are not provided' in C:\xampp\htdocs\ussd\libs\MoUssdReceiver.php:40
+Stack trace:
+#0 C:\xampp\htdocs\ussd\ussdap.php(22): UssdReceiver->__construct()
+#1 {main}
+  thrown in C:\xampp\htdocs\ussd\libs\MoUssdReceiver.php on line 40
+[27-Jan-2017 15:42:51 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Exception' with message 'Some of the required parameters are not provided' in C:\xampp\htdocs\ussd\libs\MoUssdReceiver.php:40
+Stack trace:
+#0 C:\xampp\htdocs\ussd\ussdap.php(22): UssdReceiver->__construct()
+#1 {main}
+  thrown in C:\xampp\htdocs\ussd\libs\MoUssdReceiver.php on line 40
+[27-Jan-2017 15:44:58 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Exception' with message 'Some of the required parameters are not provided' in C:\xampp\htdocs\ussd\libs\MoUssdReceiver.php:40
+Stack trace:
+#0 C:\xampp\htdocs\ussd\ussdap.php(22): UssdReceiver->__construct()
+#1 {main}
+  thrown in C:\xampp\htdocs\ussd\libs\MoUssdReceiver.php on line 40
