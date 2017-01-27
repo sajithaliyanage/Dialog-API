@@ -1,6 +1,7 @@
 <?php
 
 $curl = curl_init();
+curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
 // Set some options - we are passing in a useragent too here
 curl_setopt_array($curl, array(
     CURLOPT_RETURNTRANSFER => 1,
