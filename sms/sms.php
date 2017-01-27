@@ -9,7 +9,7 @@ try{
 	// Creating a receiver and intialze it with the incomming data
 	$jsonData = json_decode(file_get_contents('php://input'), true);
 	$message = $jsonData['message'];
-	$address = $jsonData['sourceAddress'];
+	$address = substr($jsonData['sourceAddress'],4);
 	
 	//send SMS to applier
 	$array = array("message"=>"Ado goda","destinationAddresses"=>["$address"],"password"=>APP_PASSWORD,"applicationId"=>APP_ID);
@@ -24,7 +24,7 @@ try{
 	curl_setopt_array($curl, array(
     CURLOPT_RETURNTRANSFER => 1,
     CURLOPT_URL => 'https://api.dialog.lk/sms/send',
-    CURLOPT_USERAGENT => 'Codular Sample cURL Request',
+    //CURLOPT_USERAGENT => 'Codular Sample cURL Request',
     CURLOPT_POST => 1,
     CURLOPT_POSTFIELDS => array("message"=>"Ado goda","destinationAddresses"=>["$address"],"password"=>APP_PASSWORD,"applicationId"=>APP_ID)
 	));
