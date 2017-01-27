@@ -12,9 +12,9 @@ require_once 'lib/Log.php';
 require_once 'lib/SMSReceiver.php';
 require_once 'lib/SMSSender.php';
 
-define('SERVER_URL', 'http://localhost:7000/sms/send');	
-define('APP_ID', 'APPID');
-define('APP_PASSWORD', 'password');
+define('SERVER_URL', 'https://drawningbunny.azurewebsites.net/sms/sms.php');	
+define('APP_ID', 'APP_033050');
+define('APP_PASSWORD', '2749bbeadec3a2907eff38dd8e389bcc');
 
 $logger = new Logger();
 
@@ -40,7 +40,7 @@ try{
 	}else{
 
 		// Send a SMS to a particular user
-		$response=$sender->sms('This message is sent only to one user', $address);
+		$response=$sender->sms('You Now Subscibed!', $address);
 	}
 
 }catch(SMSServiceException $e){
