@@ -1,0 +1,6 @@
+{"message":"Ado goda","destinationAddresses":["AZ1108MAIppi0t9aNScFd7Ljk0jwIVu2F3F0xSvR+kEsSuttGsmuGrABA1q9y345c5Fkq"],"password":"2749bbeadec3a2907eff38dd8e389bcc","applicationId":"APP_033050"} 
+{"message":"Ado goda","destinationAddresses":["AZ1108MAIppi0t9aNScFd7Ljk0jwIVu2F3F0xSvR+kEsSuttGsmuGrABA1q9y345c5Fkq"],"password":"2749bbeadec3a2907eff38dd8e389bcc","applicationId":"APP_033050"} 
+{"message":"Ado goda","destinationAddresses":["tel:AZ1108MAIppi0t9aNScFd7Ljk0jwIVu2F3F0xSvR+kEsSuttGsmuGrABA1q9y345c5Fkq"],"password":"2749bbeadec3a2907eff38dd8e389bcc","applicationId":"APP_033050"} 
+{"message":"Ado goda","destinationAddresses":["AZ1108MAIppi0t9aNScFd7Ljk0jwIVu2F3F0xSvR+kEsSuttGsmuGrABA1q9y345c5Fkq"],"password":"2749bbeadec3a2907eff38dd8e389bcc","applicationId":"APP_033050"} 
+{"applicationId":"APP_033050","password":"2749bbeadec3a2907eff38dd8e389bcc","version":"1.0","action":"1","subscriberId":"tel:AZ1108MAIppi0t9aNScFd7Ljk0jwIVu2F3F0xSvR+kEsSuttGsmuGrABA1q9y345c5Fkq"} 
+{"applicationId":"APP_033050","password":"2749bbeadec3a2907eff38dd8e389bcc","version":"1.0","action":"1","subscriberId":"tel:AZ1108MAIppi0t9aNScFd7Ljk0jwIVu2F3F0xSvR+kEsSuttGsmuGrABA1q9y345c5Fkq"} 

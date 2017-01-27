@@ -9,10 +9,16 @@ try{
 	// Creating a receiver and intialze it with the incomming data
 	$jsonData = json_decode(file_get_contents('php://input'), true);
 	$message = $jsonData['message'];
-	$address = substr($jsonData['sourceAddress'],4);
+	$address = $jsonData['sourceAddress'];
+	//$address = substr($jsonData['sourceAddress'],4);
 	
 	//send SMS to applier
-	$array = array("message"=>"Ado goda","destinationAddresses"=>["$address"],"password"=>APP_PASSWORD,"applicationId"=>APP_ID);
+	$array = array("applicationId"=> APP_ID,
+			  "password"=> APP_PASSWORD,
+			  "version"=> "1.0",
+			  "action"=> "1",
+			  "subscriberId"=> $address
+	);
 	$val = json_encode($array);
 	$file = fopen("log2.txt","a+");
 	fwrite($file,$val." \n");
@@ -23,10 +29,15 @@ try{
 	// Set some options - we are passing in a useragent too here
 	curl_setopt_array($curl, array(
     CURLOPT_RETURNTRANSFER => 1,
-    CURLOPT_URL => 'https://api.dialog.lk/sms/send',
+    CURLOPT_URL => 'https://api.dialog.lk/subscription/send',
     //CURLOPT_USERAGENT => 'Codular Sample cURL Request',
     CURLOPT_POST => 1,
-    CURLOPT_POSTFIELDS => array("message"=>"Ado goda","destinationAddresses"=>["$address"],"password"=>APP_PASSWORD,"applicationId"=>APP_ID)
+    CURLOPT_POSTFIELDS => json_encode(array("applicationId"=> APP_ID,
+			  "password"=> APP_PASSWORD,
+			  "version"=> "1.0",
+			  "action"=> "1",
+			  "subscriberId"=> $address
+	))
 	));
 	// Send the request & save response to $resp
 	curl_exec($curl);
