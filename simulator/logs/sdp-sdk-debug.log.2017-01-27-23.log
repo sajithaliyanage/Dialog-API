@@ -1,0 +1,48 @@
+27 Jan 2017 20:12:21,422 INFO  [][WrapperListener_start_runner] MchoiceSdpSdkStarter - ========================================================
+27 Jan 2017 20:12:21,453 INFO  [][WrapperListener_start_runner] MchoiceSdpSdkStarter - ============= mChoice SDP Simulator Started ============
+27 Jan 2017 20:12:21,453 INFO  [][WrapperListener_start_runner] MchoiceSdpSdkStarter - ========================================================
+27 Jan 2017 20:12:21,469 INFO  [][Thread-0] JettyServerStarter - Starting mChoice SDP SDK Server on Port[10001]
+27 Jan 2017 20:12:24,458 INFO  [][Thread-0] / - Initializing Spring root WebApplicationContext
+27 Jan 2017 20:13:22,718 INFO  [][qtp1479085298-44] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485528202717, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+27 Jan 2017 20:13:23,212 INFO  [][qtp1479085298-44] AtRequestSender - Message Successfully sent
+27 Jan 2017 20:13:23,220 INFO  [][qtp1479085298-44] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+27 Jan 2017 20:15:01,875 INFO  [][qtp1479085298-40] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485528301875, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+27 Jan 2017 20:15:02,202 INFO  [][qtp1248772302-25] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=password, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_000001, message=T-Shirts
+1. Small
+2. Medium
+3. Large
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701272015, requestId=1485528302201, statusDetail=Success, version=0.1, statusCode=S1000}]
+27 Jan 2017 20:15:02,275 INFO  [][qtp1479085298-40] AtRequestSender - Message Successfully sent
+27 Jan 2017 20:15:02,275 INFO  [][qtp1479085298-40] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+27 Jan 2017 22:43:36,520 INFO  [][WrapperListener_start_runner] MchoiceSdpSdkStarter - ========================================================
+27 Jan 2017 22:43:36,521 INFO  [][WrapperListener_start_runner] MchoiceSdpSdkStarter - ============= mChoice SDP Simulator Started ============
+27 Jan 2017 22:43:36,522 INFO  [][WrapperListener_start_runner] MchoiceSdpSdkStarter - ========================================================
+27 Jan 2017 22:43:36,558 INFO  [][Thread-0] JettyServerStarter - Starting mChoice SDP SDK Server on Port[10001]
+27 Jan 2017 22:43:38,912 INFO  [][Thread-0] / - Initializing Spring root WebApplicationContext
+27 Jan 2017 22:43:52,485 INFO  [][qtp1479085298-38] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485537232484, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+27 Jan 2017 22:43:52,944 INFO  [][qtp1114696819-28] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=password, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_000001, message=T-Shirts
+1. Small
+2. Medium
+3. Large
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701272243, requestId=1485537232944, statusDetail=Success, version=0.1, statusCode=S1000}]
+27 Jan 2017 22:43:52,983 INFO  [][qtp1479085298-38] AtRequestSender - Message Successfully sent
+27 Jan 2017 22:43:52,985 INFO  [][qtp1479085298-38] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+27 Jan 2017 22:44:36,213 INFO  [][qtp1479085298-41] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485537276213, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+27 Jan 2017 22:44:36,434 INFO  [][qtp1114696819-26] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=password, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_000001, message=T-Shirts
+1. Small
+2. Medium
+3. Large
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701272244, requestId=1485537276434, statusDetail=Success, version=0.1, statusCode=S1000}]
+27 Jan 2017 22:44:36,443 INFO  [][qtp1479085298-41] AtRequestSender - Message Successfully sent
+27 Jan 2017 22:44:36,445 INFO  [][qtp1479085298-41] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+27 Jan 2017 22:44:58,339 INFO  [][qtp1479085298-39] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485537298339, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+27 Jan 2017 22:44:58,670 INFO  [][qtp1114696819-25] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=password, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_000001, message=Enter Your ID, encoding=440}], sent response back to application [{timeStamp=1701272244, requestId=1485537298670, statusDetail=Success, version=0.1, statusCode=S1000}]
+27 Jan 2017 22:44:58,679 INFO  [][qtp1479085298-39] AtRequestSender - Message Successfully sent
+27 Jan 2017 22:44:58,683 INFO  [][qtp1479085298-39] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+27 Jan 2017 22:46:26,733 INFO  [][qtp1479085298-37] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485537386733, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+27 Jan 2017 22:46:27,071 INFO  [][qtp1114696819-28] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=password, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_000001, message=You Purchased a small T-Shirt Your ID 1, encoding=440}], sent response back to application [{timeStamp=1701272246, requestId=1485537387070, statusDetail=Success, version=0.1, statusCode=S1000}]
+27 Jan 2017 22:46:27,079 INFO  [][qtp1479085298-37] AtRequestSender - Message Successfully sent
+27 Jan 2017 22:46:27,081 INFO  [][qtp1479085298-37] TabViewUssdImpl - USSD Request sending status : SUCCESS.......

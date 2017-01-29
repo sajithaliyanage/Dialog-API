@@ -1,0 +1,532 @@
+28 Jan 2017 05:00:47,844 INFO  [][WrapperListener_start_runner] MchoiceSdpSdkStarter - ========================================================
+28 Jan 2017 05:00:47,848 INFO  [][WrapperListener_start_runner] MchoiceSdpSdkStarter - ============= mChoice SDP Simulator Started ============
+28 Jan 2017 05:00:47,848 INFO  [][WrapperListener_start_runner] MchoiceSdpSdkStarter - ========================================================
+28 Jan 2017 05:00:47,890 INFO  [][Thread-0] JettyServerStarter - Starting mChoice SDP SDK Server on Port[10001]
+28 Jan 2017 05:00:50,022 INFO  [][Thread-0] / - Initializing Spring root WebApplicationContext
+28 Jan 2017 05:02:12,871 INFO  [][qtp680434514-39] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485559932870, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+28 Jan 2017 05:02:13,235 INFO  [][qtp366484048-26] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280502, requestId=1485559933235, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:02:13,256 INFO  [][qtp680434514-39] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:02:13,258 INFO  [][qtp680434514-39] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:02:23,419 INFO  [][qtp680434514-43] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485559943419, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+28 Jan 2017 05:02:23,640 INFO  [][qtp366484048-24] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=mt-fin, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280502, requestId=1485559943640, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+28 Jan 2017 05:02:23,649 INFO  [][qtp680434514-43] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:02:23,652 INFO  [][qtp680434514-43] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:03:24,480 INFO  [][qtp680434514-53] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485560004480, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+28 Jan 2017 05:03:24,704 INFO  [][qtp366484048-22] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=password, destinationAddress=mt-fin, sessionId=123, applicationId=APP_000001, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280503, requestId=1485560004704, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+28 Jan 2017 05:03:24,707 INFO  [][qtp680434514-53] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:03:24,707 INFO  [][qtp680434514-53] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:03:53,595 INFO  [][qtp680434514-52] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485560033595, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+28 Jan 2017 05:03:53,808 INFO  [][qtp366484048-24] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=password, destinationAddress=mt-fin, sessionId=123, applicationId=APP_000001, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280503, requestId=1485560033808, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+28 Jan 2017 05:03:53,812 INFO  [][qtp680434514-52] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:03:53,814 INFO  [][qtp680434514-52] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:05:11,427 INFO  [][qtp680434514-40] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485560111427, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+28 Jan 2017 05:05:11,647 INFO  [][qtp366484048-25] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280505, requestId=1485560111647, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:05:11,651 INFO  [][qtp680434514-40] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:05:11,652 INFO  [][qtp680434514-40] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:05:22,875 INFO  [][qtp680434514-51] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485560122875, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+28 Jan 2017 05:05:23,099 INFO  [][qtp366484048-24] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!2, encoding=440}], sent response back to application [{timeStamp=1701280505, requestId=1485560123099, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:05:23,106 INFO  [][qtp680434514-51] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:05:23,107 INFO  [][qtp680434514-51] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:06:40,850 INFO  [][qtp680434514-44] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485560200850, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=main, encoding=440, version=1.0}] 
+28 Jan 2017 05:06:41,073 INFO  [][qtp366484048-24] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280506, requestId=1485560201073, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:06:41,082 INFO  [][qtp680434514-44] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:06:41,084 INFO  [][qtp680434514-44] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:07:00,233 INFO  [][qtp680434514-43] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485560220233, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=*678#, encoding=440, version=1.0}] 
+28 Jan 2017 05:07:00,447 INFO  [][qtp366484048-25] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280507, requestId=1485560220447, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:07:00,454 INFO  [][qtp680434514-43] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:07:00,457 INFO  [][qtp680434514-43] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:07:22,035 INFO  [][qtp680434514-40] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485560242035, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+28 Jan 2017 05:07:22,246 INFO  [][qtp366484048-26] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280507, requestId=1485560242246, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:07:22,254 INFO  [][qtp680434514-40] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:07:22,256 INFO  [][qtp680434514-40] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:07:28,586 INFO  [][qtp680434514-52] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485560248586, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+28 Jan 2017 05:07:28,799 INFO  [][qtp366484048-24] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280507, requestId=1485560248799, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:07:28,805 INFO  [][qtp680434514-52] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:07:28,806 INFO  [][qtp680434514-52] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:09:54,986 INFO  [][qtp680434514-60] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485560394986, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+28 Jan 2017 05:09:55,221 INFO  [][qtp366484048-25] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280509, requestId=1485560395221, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:09:55,226 INFO  [][qtp680434514-60] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:09:55,226 INFO  [][qtp680434514-60] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:10:05,823 INFO  [][qtp680434514-54] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485560405823, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+28 Jan 2017 05:10:06,034 INFO  [][qtp366484048-28] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280510, requestId=1485560406033, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:10:06,041 INFO  [][qtp680434514-54] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:10:06,042 INFO  [][qtp680434514-54] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:10:52,929 INFO  [][qtp680434514-52] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485560452929, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=tgf, encoding=440, version=1.0}] 
+28 Jan 2017 05:10:53,145 INFO  [][qtp366484048-24] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280510, requestId=1485560453145, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:10:53,152 INFO  [][qtp680434514-52] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:10:53,154 INFO  [][qtp680434514-52] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:11:16,273 INFO  [][qtp680434514-61] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485560476273, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+28 Jan 2017 05:11:16,485 INFO  [][qtp366484048-25] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280511, requestId=1485560476485, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:11:16,491 INFO  [][qtp680434514-61] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:11:16,492 INFO  [][qtp680434514-61] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:15:36,466 INFO  [][qtp680434514-54] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485560736466, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+28 Jan 2017 05:15:36,679 INFO  [][qtp366484048-22] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280515, requestId=1485560736678, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:15:36,681 INFO  [][qtp680434514-54] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:15:36,681 INFO  [][qtp680434514-54] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:15:46,762 INFO  [][qtp680434514-58] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485560746762, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+28 Jan 2017 05:15:46,980 INFO  [][qtp366484048-28] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280515, requestId=1485560746979, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:15:46,985 INFO  [][qtp680434514-58] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:15:46,988 INFO  [][qtp680434514-58] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:29:45,599 INFO  [][qtp680434514-57] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485561585599, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=535, encoding=440, version=1.0}] 
+28 Jan 2017 05:29:45,831 INFO  [][qtp366484048-26] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280529, requestId=1485561585831, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:29:45,839 INFO  [][qtp680434514-57] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:29:45,840 INFO  [][qtp680434514-57] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:29:59,636 INFO  [][qtp680434514-64] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485561599636, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=4, encoding=440, version=1.0}] 
+28 Jan 2017 05:29:59,852 INFO  [][qtp366484048-24] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280529, requestId=1485561599852, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:29:59,926 INFO  [][qtp680434514-64] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:29:59,927 INFO  [][qtp680434514-64] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:33:37,657 INFO  [][qtp680434514-55] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485561817657, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=4, encoding=440, version=1.0}] 
+28 Jan 2017 05:33:37,896 INFO  [][qtp366484048-27] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280533, requestId=1485561817895, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:33:37,905 INFO  [][qtp680434514-55] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:33:37,908 INFO  [][qtp680434514-55] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:33:48,960 INFO  [][qtp680434514-54] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485561828960, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=99, encoding=440, version=1.0}] 
+28 Jan 2017 05:33:49,166 INFO  [][qtp366484048-27] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280533, requestId=1485561829165, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:33:49,172 INFO  [][qtp680434514-54] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:33:49,173 INFO  [][qtp680434514-54] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:34:14,809 INFO  [][qtp680434514-62] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485561854809, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=4, encoding=440, version=1.0}] 
+28 Jan 2017 05:34:15,034 INFO  [][qtp366484048-22] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280534, requestId=1485561855034, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:34:15,041 INFO  [][qtp680434514-62] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:34:15,042 INFO  [][qtp680434514-62] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:35:09,988 INFO  [][qtp680434514-66] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485561909988, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=4, encoding=440, version=1.0}] 
+28 Jan 2017 05:35:10,192 INFO  [][qtp366484048-24] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280535, requestId=1485561910192, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:35:10,194 INFO  [][qtp680434514-66] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:35:10,195 INFO  [][qtp680434514-66] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:35:21,297 INFO  [][qtp680434514-57] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485561921297, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=5, encoding=440, version=1.0}] 
+28 Jan 2017 05:35:21,601 INFO  [][qtp366484048-24] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Incorrect option, encoding=440}], sent response back to application [{timeStamp=1701280535, requestId=1485561921601, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:35:21,606 INFO  [][qtp680434514-57] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:35:21,607 INFO  [][qtp680434514-57] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:36:50,401 INFO  [][qtp680434514-64] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485562010401, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=5, encoding=440, version=1.0}] 
+28 Jan 2017 05:36:50,724 INFO  [][qtp366484048-28] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Enter Your Purchase, encoding=440}], sent response back to application [{timeStamp=1701280536, requestId=1485562010724, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:36:50,731 INFO  [][qtp680434514-64] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:36:50,732 INFO  [][qtp680434514-64] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:53:51,830 INFO  [][qtp680434514-57] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563031830, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=5, encoding=440, version=1.0}] 
+28 Jan 2017 05:53:52,059 INFO  [][qtp366484048-25] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280553, requestId=1485563032059, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:53:52,066 INFO  [][qtp680434514-57] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:53:52,067 INFO  [][qtp680434514-57] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:54:07,034 INFO  [][qtp680434514-55] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485563047034, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+28 Jan 2017 05:54:07,351 INFO  [][qtp366484048-22] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Incorrect option, encoding=440}], sent response back to application [{timeStamp=1701280554, requestId=1485563047351, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:54:07,353 INFO  [][qtp680434514-55] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:54:07,353 INFO  [][qtp680434514-55] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:55:56,491 INFO  [][qtp680434514-70] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563156491, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+28 Jan 2017 05:55:56,715 INFO  [][qtp366484048-27] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280555, requestId=1485563156715, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:55:56,720 INFO  [][qtp680434514-70] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:55:56,723 INFO  [][qtp680434514-70] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:56:06,794 INFO  [][qtp680434514-69] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485563166794, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=4, encoding=440, version=1.0}] 
+28 Jan 2017 05:56:07,008 INFO  [][qtp366484048-24] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 6250 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280556, requestId=1485563167008, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:56:07,010 INFO  [][qtp680434514-69] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:56:07,011 INFO  [][qtp680434514-69] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:56:21,377 INFO  [][qtp680434514-55] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563181377, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=4, encoding=440, version=1.0}] 
+28 Jan 2017 05:56:21,590 INFO  [][qtp366484048-25] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280556, requestId=1485563181590, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:56:21,597 INFO  [][qtp680434514-55] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:56:21,599 INFO  [][qtp680434514-55] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:56:28,033 INFO  [][qtp680434514-57] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563188033, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+28 Jan 2017 05:56:28,244 INFO  [][qtp366484048-22] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280556, requestId=1485563188244, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:56:28,246 INFO  [][qtp680434514-57] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:56:28,247 INFO  [][qtp680434514-57] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:56:42,481 INFO  [][qtp680434514-55] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485563202481, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+28 Jan 2017 05:56:42,698 INFO  [][qtp366484048-28] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 250 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280556, requestId=1485563202698, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:56:42,707 INFO  [][qtp680434514-55] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:56:42,710 INFO  [][qtp680434514-55] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:56:48,986 INFO  [][qtp680434514-69] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563208986, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+28 Jan 2017 05:56:49,200 INFO  [][qtp366484048-26] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280556, requestId=1485563209200, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:56:49,207 INFO  [][qtp680434514-69] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:56:49,208 INFO  [][qtp680434514-69] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:56:57,865 INFO  [][qtp680434514-69] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485563217865, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+28 Jan 2017 05:56:58,076 INFO  [][qtp366484048-25] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 250 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280556, requestId=1485563218076, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:56:58,079 INFO  [][qtp680434514-69] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:56:58,079 INFO  [][qtp680434514-69] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:57:07,826 INFO  [][qtp680434514-66] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485563227826, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+28 Jan 2017 05:57:08,029 INFO  [][qtp366484048-28] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 2500 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280557, requestId=1485563228029, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:57:08,031 INFO  [][qtp680434514-66] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:57:08,031 INFO  [][qtp680434514-66] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:58:22,954 INFO  [][qtp680434514-72] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563302954, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+28 Jan 2017 05:58:23,175 INFO  [][qtp366484048-22] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280558, requestId=1485563303175, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:58:23,181 INFO  [][qtp680434514-72] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:58:23,182 INFO  [][qtp680434514-72] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:58:35,419 INFO  [][qtp680434514-74] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485563315419, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=4, encoding=440, version=1.0}] 
+28 Jan 2017 05:58:35,739 INFO  [][qtp366484048-25] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Enter Your Purchase, encoding=440}], sent response back to application [{timeStamp=1701280558, requestId=1485563315738, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:58:35,744 INFO  [][qtp680434514-74] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:58:35,744 INFO  [][qtp680434514-74] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:59:20,994 INFO  [][qtp680434514-66] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563360994, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=4, encoding=440, version=1.0}] 
+28 Jan 2017 05:59:21,215 INFO  [][qtp366484048-24] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280559, requestId=1485563361215, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:59:21,222 INFO  [][qtp680434514-66] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:59:21,224 INFO  [][qtp680434514-66] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:59:30,363 INFO  [][qtp680434514-74] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563370363, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=4, encoding=440, version=1.0}] 
+28 Jan 2017 05:59:30,578 INFO  [][qtp366484048-22] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280559, requestId=1485563370578, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:59:30,581 INFO  [][qtp680434514-74] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:59:30,581 INFO  [][qtp680434514-74] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:59:39,811 INFO  [][qtp680434514-72] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485563379811, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=4, encoding=440, version=1.0}] 
+28 Jan 2017 05:59:40,017 INFO  [][qtp366484048-27] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 6250 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280559, requestId=1485563380016, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:59:40,115 INFO  [][qtp680434514-72] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:59:40,116 INFO  [][qtp680434514-72] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 05:59:59,634 INFO  [][qtp680434514-68] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563399634, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=4, encoding=440, version=1.0}] 
+28 Jan 2017 05:59:59,845 INFO  [][qtp366484048-27] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280559, requestId=1485563399845, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 05:59:59,849 INFO  [][qtp680434514-68] AtRequestSender - Message Successfully sent
+28 Jan 2017 05:59:59,851 INFO  [][qtp680434514-68] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:00:08,243 INFO  [][qtp680434514-72] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563408243, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+28 Jan 2017 06:00:08,461 INFO  [][qtp366484048-28] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280600, requestId=1485563408461, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:00:08,464 INFO  [][qtp680434514-72] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:00:08,464 INFO  [][qtp680434514-72] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:00:24,737 INFO  [][qtp680434514-71] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485563424737, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+28 Jan 2017 06:00:24,962 INFO  [][qtp366484048-25] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 6250 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280600, requestId=1485563424962, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:00:25,106 INFO  [][qtp680434514-71] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:00:25,107 INFO  [][qtp680434514-71] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:03:11,201 INFO  [][qtp680434514-72] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563591201, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+28 Jan 2017 06:03:11,423 INFO  [][qtp366484048-22] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280603, requestId=1485563591423, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:03:11,426 INFO  [][qtp680434514-72] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:03:11,427 INFO  [][qtp680434514-72] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:03:40,054 INFO  [][qtp680434514-66] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563620053, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+28 Jan 2017 06:03:40,266 INFO  [][qtp366484048-24] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280603, requestId=1485563620266, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:03:40,271 INFO  [][qtp680434514-66] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:03:40,273 INFO  [][qtp680434514-66] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:03:49,061 INFO  [][qtp680434514-75] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485563629061, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+28 Jan 2017 06:03:49,287 INFO  [][qtp366484048-22] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 6250 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280603, requestId=1485563629287, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:03:49,382 INFO  [][qtp680434514-75] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:03:49,383 INFO  [][qtp680434514-75] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:08:41,130 INFO  [][qtp680434514-71] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563921130, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+28 Jan 2017 06:08:41,361 INFO  [][qtp366484048-27] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. s - 250 coins - Rs 1
+2. m - 750 coins - Rs 3
+3. l - 2500coins - Rs 5
+4. xl - 6250coins - Rs 10
+5. xxl - 20000coins - Rs 30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280608, requestId=1485563921361, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:08:41,364 INFO  [][qtp680434514-71] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:08:41,364 INFO  [][qtp680434514-71] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:08:55,228 INFO  [][qtp680434514-54] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485563935228, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+28 Jan 2017 06:08:55,442 INFO  [][qtp366484048-25] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 6250 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280608, requestId=1485563935442, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:08:55,536 INFO  [][qtp680434514-54] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:08:55,538 INFO  [][qtp680434514-54] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:09:55,850 INFO  [][qtp680434514-54] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563995850, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+28 Jan 2017 06:09:56,066 INFO  [][qtp366484048-22] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. s
+2. m
+3. l
+4. xl
+5. xxl
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280609, requestId=1485563996066, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:09:56,070 INFO  [][qtp680434514-54] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:09:56,070 INFO  [][qtp680434514-54] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:10:17,785 INFO  [][qtp680434514-68] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485564017785, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+28 Jan 2017 06:10:18,012 INFO  [][qtp366484048-26] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 6250 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280610, requestId=1485564018012, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:10:18,097 INFO  [][qtp680434514-68] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:10:18,097 INFO  [][qtp680434514-68] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:11:10,750 INFO  [][qtp680434514-66] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485564070750, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+28 Jan 2017 06:11:10,988 INFO  [][qtp366484048-28] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. s
+2. m
+3. l
+4. xl
+5. xxl
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280611, requestId=1485564070988, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:11:10,993 INFO  [][qtp680434514-66] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:11:10,996 INFO  [][qtp680434514-66] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:11:19,347 INFO  [][qtp680434514-79] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485564079347, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+28 Jan 2017 06:11:19,647 INFO  [][qtp366484048-24] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Incorrect option, encoding=440}], sent response back to application [{timeStamp=1701280611, requestId=1485564079647, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:11:19,654 INFO  [][qtp680434514-79] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:11:19,655 INFO  [][qtp680434514-79] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:22:06,355 INFO  [][qtp680434514-83] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485564726355, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+28 Jan 2017 06:22:06,574 INFO  [][qtp366484048-28] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. s
+2. m
+3. l
+4. xl
+5. xxl
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280622, requestId=1485564726573, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:22:06,579 INFO  [][qtp680434514-83] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:22:06,580 INFO  [][qtp680434514-83] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:22:36,301 INFO  [][qtp680434514-71] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485564756301, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+28 Jan 2017 06:22:36,515 INFO  [][qtp366484048-25] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. s
+2. m
+3. l
+4. xl
+5. xxl
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280622, requestId=1485564756515, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:22:36,520 INFO  [][qtp680434514-71] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:22:36,520 INFO  [][qtp680434514-71] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:23:20,597 INFO  [][qtp680434514-82] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485564800597, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+28 Jan 2017 06:23:20,813 INFO  [][qtp366484048-22] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280623, requestId=1485564800813, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:23:20,818 INFO  [][qtp680434514-82] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:23:20,818 INFO  [][qtp680434514-82] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:23:30,907 INFO  [][qtp680434514-54] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485564810907, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+28 Jan 2017 06:23:31,000 INFO  [][qtp680434514-54] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:23:31,000 INFO  [][qtp680434514-54] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:24:04,281 INFO  [][qtp680434514-79] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485564844281, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+28 Jan 2017 06:24:04,494 INFO  [][qtp366484048-28] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280624, requestId=1485564844494, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:24:04,497 INFO  [][qtp680434514-79] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:24:04,497 INFO  [][qtp680434514-79] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:24:13,715 INFO  [][qtp680434514-81] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485564853715, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+28 Jan 2017 06:24:13,948 INFO  [][qtp366484048-27] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280624, requestId=1485564853948, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:24:14,034 INFO  [][qtp680434514-81] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:24:14,034 INFO  [][qtp680434514-81] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:29:26,889 INFO  [][qtp680434514-92] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485565166889, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+28 Jan 2017 06:29:27,294 INFO  [][qtp366484048-25] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280629, requestId=1485565167294, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:29:27,300 INFO  [][qtp680434514-92] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:29:27,301 INFO  [][qtp680434514-92] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:29:35,778 INFO  [][qtp680434514-93] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485565175778, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+28 Jan 2017 06:29:36,135 INFO  [][qtp366484048-28] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280629, requestId=1485565176135, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:29:36,180 INFO  [][qtp680434514-93] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:29:36,180 INFO  [][qtp680434514-93] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:39:25,003 INFO  [][qtp680434514-86] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485565765003, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+28 Jan 2017 06:39:25,415 INFO  [][qtp366484048-22] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280639, requestId=1485565765414, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:39:25,417 INFO  [][qtp680434514-86] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:39:25,417 INFO  [][qtp680434514-86] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:40:11,883 INFO  [][qtp680434514-95] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485565811883, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+28 Jan 2017 06:40:12,244 INFO  [][qtp366484048-27] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280640, requestId=1485565812244, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:40:12,247 INFO  [][qtp680434514-95] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:40:12,248 INFO  [][qtp680434514-95] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:40:19,332 INFO  [][qtp680434514-95] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485565819332, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+28 Jan 2017 06:40:19,730 INFO  [][qtp366484048-26] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you! \n TOKEN ID -1, encoding=440}], sent response back to application [{timeStamp=1701280640, requestId=1485565819730, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:40:19,778 INFO  [][qtp680434514-95] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:40:19,779 INFO  [][qtp680434514-95] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:41:29,072 INFO  [][qtp680434514-93] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485565889072, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+28 Jan 2017 06:41:29,470 INFO  [][qtp366484048-26] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280641, requestId=1485565889470, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:41:29,477 INFO  [][qtp680434514-93] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:41:29,478 INFO  [][qtp680434514-93] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:41:39,970 INFO  [][qtp680434514-100] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485565899970, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+28 Jan 2017 06:41:40,404 INFO  [][qtp366484048-28] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you! \n TOKEN ID - QWER1, encoding=440}], sent response back to application [{timeStamp=1701280641, requestId=1485565900404, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:41:40,470 INFO  [][qtp680434514-100] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:41:40,470 INFO  [][qtp680434514-100] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:52:41,810 INFO  [][qtp680434514-99] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485566561810, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+28 Jan 2017 06:52:42,220 INFO  [][qtp366484048-25] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280652, requestId=1485566562219, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:52:42,226 INFO  [][qtp680434514-99] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:52:42,228 INFO  [][qtp680434514-99] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:53:00,672 INFO  [][qtp680434514-98] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485566580672, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+28 Jan 2017 06:53:01,052 INFO  [][qtp366484048-22] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you! \n TOKEN ID - QWER1, encoding=440}], sent response back to application [{timeStamp=1701280653, requestId=1485566581052, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:53:01,098 INFO  [][qtp680434514-98] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:53:01,098 INFO  [][qtp680434514-98] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 06:58:56,052 INFO  [][qtp680434514-79] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485566936052, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+28 Jan 2017 06:58:56,506 INFO  [][qtp366484048-26] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280658, requestId=1485566936506, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 06:58:56,508 INFO  [][qtp680434514-79] AtRequestSender - Message Successfully sent
+28 Jan 2017 06:58:56,508 INFO  [][qtp680434514-79] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 07:12:51,403 INFO  [][qtp680434514-102] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485567771403, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+28 Jan 2017 07:12:51,853 INFO  [][qtp366484048-24] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you! \n TOKEN ID - QWER1, encoding=440}], sent response back to application [{timeStamp=1701280712, requestId=1485567771853, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 07:12:51,899 INFO  [][qtp680434514-102] AtRequestSender - Message Successfully sent
+28 Jan 2017 07:12:51,899 INFO  [][qtp680434514-102] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+28 Jan 2017 07:27:05,342 INFO  [][qtp680434514-100] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485568625342, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+28 Jan 2017 07:27:05,770 INFO  [][qtp366484048-22] UssdNcsRestService - Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
+
+99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280727, requestId=1485568625770, statusDetail=Success, version=0.1, statusCode=S1000}]
+28 Jan 2017 07:27:05,776 INFO  [][qtp680434514-100] AtRequestSender - Message Successfully sent
+28 Jan 2017 07:27:05,776 INFO  [][qtp680434514-100] TabViewUssdImpl - USSD Request sending status : SUCCESS.......

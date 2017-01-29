@@ -7,12 +7,13 @@ require 'libs/MtUssdSender.php';
 require 'class/operationsClass.php';
 require 'libs/Log.php';
 require 'db.php';
+require 'connect.php';
 
 
 $production=false;
 
 	if($production==false){
-		$ussdserverurl ='http://drawningbunny.azurewebsites.net/ussd/ussdap.php';
+		$ussdserverurl ='http://localhost:7000/ussd/send';
 	}
 	else{
 		$ussdserverurl= 'https://api.dialog.lk/ussd/send';
@@ -36,10 +37,12 @@ $ussdOperation 		= 	$receiver->getUssdOperation(); // get the ussd operation
 
 $responseMsg = array(
     "main" =>  
-    "T-Shirts
-1. Small
-2. Medium
-3. Large
+    "Purchase Mode
+1. 250 coins - Rs.1
+2. 750 coins - Rs.3
+3. 2500 coins - Rs.5
+4. 6250 coins - Rs.10
+5. 20000 coins - Rs.30
 
 99. Exit"
 );
@@ -66,6 +69,11 @@ if ($ussdOperation  == "mo-init") {
   	$sessiondetails=  $operations->getSession($sessionId);
   	$cuch_menu=$sessiondetails['menu'];
   	$operations->session_id=$sessiondetails['sessionsid'];
+	
+	$sql = "Select user_id from user where phone='$address'";
+	$result = mysqli_query($conn, $sql);
+	$row = mysqli_fetch_assoc($result);
+	$userID = $row['user_id'];
 
 		switch($cuch_menu ){
 		
@@ -74,17 +82,27 @@ if ($ussdOperation  == "mo-init") {
 						case "1":
 							$operations->session_menu="small";
 							$operations->saveSesssion();
-							$sender->ussd($sessionId,'Enter Your ID',$address );
+							//$sender->ussd($sessionId,'Enter Your Purchase',$address );					
 							break;
 						case "2":
 							$operations->session_menu="medium";
 							$operations->saveSesssion();
-							$sender->ussd($sessionId,'Enter Your ID',$address );
+							//$sender->ussd($sessionId,'Enter Your Purchase',$address );							
 							break;
 						case "3":
 							$operations->session_menu="large";
 							$operations->saveSesssion();
-							$sender->ussd($sessionId,'Enter Your ID',$address );
+							//$sender->ussd($sessionId,'Enter Your Purchase',$address );
+							break;
+						case "4":
+							$operations->session_menu="large1";
+							$operations->saveSesssion();
+							//$sender->ussd($sessionId,'Enter Your Purchase',$address );						
+							break;
+						case "5":
+							$operations->session_menu="large2";
+							$operations->saveSesssion();
+							$sender->ussd($sessionId,'Enter Your Purchase',$address );							
 							break;
 						default:
 							$operations->session_menu="main";
@@ -94,16 +112,29 @@ if ($ussdOperation  == "mo-init") {
 					}
 					break;
 			case "small":
-				$operations->session_menu="medium";
-				$operations->session_others=$receiver->getMessage();
-				$operations->saveSesssion();
-				$sender->ussd($sessionId,'You Purchased a small T-Shirt Your ID '.$receiver->getMessage(),$address ,'mt-fin');
+				$sender->ussd($sessionId,'You Purchased 250 coins. Thank you! TOKEN ID - QWER'.$userID,$address ,'mt-fin');
+				$sql = "UPDATE user SET coin=coin+250 WHERE phone='$address'";
+				mysqli_query($conn, $sql);
 				break;
 			case "medium":
-				$sender->ussd($sessionId,'You Purchased a medium T-Shirt Your ID '.$receiver->getMessage(),$address ,'mt-fin');
+				$sender->ussd($sessionId,'You Purchased 750 coins. Thank you! \n TOKEN ID - QWER'.$userID,$address ,'mt-fin');
+				$sql = "UPDATE user SET coin=coin+750 WHERE phone='$address'";
+				mysqli_query($conn, $sql);
 				break;
 			case "large":
-				$sender->ussd($sessionId,'You Purchased a large T-Shirt Your ID '.$receiver->getMessage(),$address ,'mt-fin');
+				$sender->ussd($sessionId,'You Purchased 2500 coins. Thank you! \n TOKEN ID - QWER'.$userID,$address ,'mt-fin');
+				$sql = "UPDATE user SET coin=coin+2500 WHERE phone='$address'";
+				mysqli_query($conn, $sql);
+				break;
+			case "large1":
+				$sender->ussd($sessionId,'You Purchased 6250 coins. Thank you! \n TOKEN ID - QWER'.$userID,$address ,'mt-fin');
+				$sql = "UPDATE user SET coin=coin+6250 WHERE phone='$address'";
+				mysqli_query($conn, $sql);
+				break;
+			case "large2":
+				$sender->ussd($sessionId,'You Purchased 20000 coins. Thank you! \n TOKEN ID - QWER'.$userID,$address ,'mt-fin');
+				$sql = "UPDATE user SET coin=coin+20000 WHERE phone='$address'";
+				mysqli_query($conn, $sql);
 				break;
 			default:
 				$operations->session_menu="main";

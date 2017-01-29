@@ -1,0 +1,1246 @@
+STATUS | wrapper  | 2017/01/26 21:23:33 | --> Wrapper Started as Console
+STATUS | wrapper  | 2017/01/26 21:23:34 | Launching a JVM...
+INFO   | jvm 1    | 2017/01/26 21:23:34 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2017/01/26 21:23:34 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2017/01/26 21:23:34 | 
+INFO   | jvm 1    | 2017/01/26 21:23:34 | 
+INFO   | jvm 1    | 2017/01/26 21:23:34 | WARNING - Unable to load the Wrapper's native library because none of the
+INFO   | jvm 1    | 2017/01/26 21:23:34 |           following files:
+INFO   | jvm 1    | 2017/01/26 21:23:34 |             wrapper-windows-x86-64.dll
+INFO   | jvm 1    | 2017/01/26 21:23:34 |             wrapper.dll
+INFO   | jvm 1    | 2017/01/26 21:23:34 |           could be located on the following java.library.path:
+INFO   | jvm 1    | 2017/01/26 21:23:34 |             C:\Users\Sajitha\Desktop\sdk-standalone-1.0.147\lib
+INFO   | jvm 1    | 2017/01/26 21:23:34 |           Please see the documentation for the wrapper.java.library.path
+INFO   | jvm 1    | 2017/01/26 21:23:34 |           configuration property.
+INFO   | jvm 1    | 2017/01/26 21:23:34 |           System signals will not be handled correctly.
+INFO   | jvm 1    | 2017/01/26 21:23:34 | 
+INFO   | jvm 1    | 2017/01/26 21:23:35 | 21:23:35,480 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2017/01/26 21:23:35 | 21:23:35,485 INFO MchoiceSdpSdkStarter -  ============= mChoice SDP Simulator Started ============
+INFO   | jvm 1    | 2017/01/26 21:23:35 | 21:23:35,485 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2017/01/26 21:23:35 | 21:23:35,525 INFO JettyServerStarter -  Starting mChoice SDP SDK Server on Port[10001]
+INFO   | jvm 1    | 2017/01/26 21:23:37 | 21:23:37,440 INFO / -  Initializing Spring root WebApplicationContext
+INFO   | jvm 1    | 2017/01/26 21:23:37 | SLF4J: Class path contains multiple SLF4J bindings.
+INFO   | jvm 1    | 2017/01/26 21:23:37 | SLF4J: Found binding in [jar:file:/C:/Users/Sajitha/AppData/Local/Temp/jetty-0.0.0.0-10001-mchoice-sdp-sdk.war-_-any-/webapp/WEB-INF/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2017/01/26 21:23:37 | SLF4J: Found binding in [jar:file:/C:/Users/Sajitha/Desktop/sdk-standalone-1.0.147/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2017/01/26 21:23:37 | SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+INFO   | jvm 1    | 2017/01/26 21:24:17 | Message key not found []
+INFO   | jvm 1    | 2017/01/26 21:24:17 | Message key not found []
+INFO   | jvm 1    | 2017/01/26 21:24:52 | 21:24:52,772 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485446092772, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 21:24:53,945 ERROR AtRequestSender -  Error while sending message to application or application may not available for given port
+INFO   | jvm 1    | 2017/01/26 21:24:54 | org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.interceptor.Fault: Could not send Message.
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:807)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:743)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:717)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.apache.cxf.jaxrs.client.WebClient.invoke(WebClient.java:262)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.apache.cxf.jaxrs.client.WebClient.post(WebClient.java:271)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at hms.kite.simulator.rest.AtRequestSender.makeRestCallToHTTP(AtRequestSender.java:89)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at hms.kite.simulator.rest.AtRequestSender.sendMessage(AtRequestSender.java:51)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at hms.kite.simulator.ussd.UssdMessageSender.sendMessage(UssdMessageSender.java:39)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at hms.kite.simulator.webui.ui.services.impl.UssdNcsService.sendMessage(UssdNcsService.java:34)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at hms.kite.simulator.webui.ui.tab.impl.TabViewUssdImpl$2.buttonClick(TabViewUssdImpl.java:135)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at java.lang.reflect.Method.invoke(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at com.vaadin.event.ListenerMethod.receiveEvent(ListenerMethod.java:490)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at com.vaadin.event.EventRouter.fireEvent(EventRouter.java:162)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at com.vaadin.ui.AbstractComponent.fireEvent(AbstractComponent.java:1166)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at com.vaadin.ui.Button.fireClick(Button.java:380)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at com.vaadin.ui.Button.changeVariables(Button.java:196)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.handleVariableBurst(AbstractCommunicationManager.java:1297)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.handleVariables(AbstractCommunicationManager.java:1217)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.doHandleUidlRequest(AbstractCommunicationManager.java:733)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at com.vaadin.terminal.gwt.server.CommunicationManager.handleUidlRequest(CommunicationManager.java:296)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at com.vaadin.terminal.gwt.server.AbstractApplicationServlet.service(AbstractApplicationServlet.java:483)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:550)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:486)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:517)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:229)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:970)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:414)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:187)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:904)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.eclipse.jetty.server.Server.handle(Server.java:347)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:590)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.eclipse.jetty.server.HttpConnection$RequestHandler.content(HttpConnection.java:1071)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:823)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:220)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.eclipse.jetty.server.HttpConnection.handle(HttpConnection.java:411)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:535)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:40)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:529)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at java.lang.Thread.run(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | Caused by: org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.interceptor.Fault: Could not send Message.
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.apache.cxf.jaxrs.client.AbstractClient.checkClientException(AbstractClient.java:501)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.apache.cxf.jaxrs.client.AbstractClient.preProcessResult(AbstractClient.java:488)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:800)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	... 45 more
+INFO   | jvm 1    | 2017/01/26 21:24:54 | Caused by: org.apache.cxf.interceptor.Fault: Could not send Message.
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:64)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:795)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	... 45 more
+INFO   | jvm 1    | 2017/01/26 21:24:54 | Caused by: java.net.ConnectException: ConnectException invoking http://localhost:5557/mo-receiver: Connection refused: connect
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1457)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1442)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:658)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	... 47 more
+INFO   | jvm 1    | 2017/01/26 21:24:54 | Caused by: java.net.ConnectException: Connection refused: connect
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at java.net.PlainSocketImpl.connect(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at java.net.SocksSocketImpl.connect(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at java.net.Socket.connect(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at sun.net.NetworkClient.doConnect(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at sun.net.www.http.HttpClient.New(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at sun.net.www.http.HttpClient.New(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1394)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1336)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:42)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1414)
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 	... 50 more
+INFO   | jvm 1    | 2017/01/26 21:24:54 | 21:24:54,073 INFO TabViewUssdImpl -  USSD Request sending status : Failed ........
+INFO   | jvm 1    | 2017/01/26 21:28:07 | 21:28:07,389 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94778039893, requestId=1485446287389, vlrAddress=some vlr address, sessionId=1, applicationId=APP_000001, message=*123*, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/26 21:28:07 | 21:28:07,587 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/26 21:28:07 | 21:28:07,589 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/26 21:30:55 | 21:30:55,453 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94778039893, requestId=1485446455453, vlrAddress=some vlr address, sessionId=1, applicationId=APP_000001, message=*123*, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/26 21:30:55 | 21:30:55,473 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/26 21:30:55 | 21:30:55,473 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/26 21:41:28 | 21:41:28,452 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94778039893, requestId=1485447088452, vlrAddress=some vlr address, sessionId=1, applicationId=APP_033027, message=*123*, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/26 21:41:28 | 21:41:28,465 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/26 21:41:28 | 21:41:28,466 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/26 21:45:22 | 21:45:22,706 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94778039893, requestId=1485447322706, vlrAddress=some vlr address, sessionId=2, applicationId=APP_033027, message=*123*, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/26 21:45:22 | 21:45:22,726 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/26 21:45:22 | 21:45:22,726 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 21:57:13,216 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94778039893, requestId=1485448033216, vlrAddress=some vlr address, sessionId=2, applicationId=APP_033027, message=*123*, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 21:57:13,219 ERROR AtRequestSender -  Error while sending message to application or application may not available for given port
+INFO   | jvm 1    | 2017/01/26 21:57:13 | org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.jaxrs.client.ClientWebApplicationException: java.lang.IllegalArgumentException: IllegalArgumentException invoking http://localhost:70000/ussd/ussdap.php: port out of range:70000
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:807)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:743)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:717)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.apache.cxf.jaxrs.client.WebClient.invoke(WebClient.java:262)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.apache.cxf.jaxrs.client.WebClient.post(WebClient.java:271)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at hms.kite.simulator.rest.AtRequestSender.makeRestCallToHTTP(AtRequestSender.java:89)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at hms.kite.simulator.rest.AtRequestSender.sendMessage(AtRequestSender.java:51)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at hms.kite.simulator.ussd.UssdMessageSender.sendMessage(UssdMessageSender.java:39)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at hms.kite.simulator.webui.ui.services.impl.UssdNcsService.sendMessage(UssdNcsService.java:34)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at hms.kite.simulator.webui.ui.tab.impl.TabViewUssdImpl$2.buttonClick(TabViewUssdImpl.java:135)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at java.lang.reflect.Method.invoke(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at com.vaadin.event.ListenerMethod.receiveEvent(ListenerMethod.java:490)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at com.vaadin.event.EventRouter.fireEvent(EventRouter.java:162)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at com.vaadin.ui.AbstractComponent.fireEvent(AbstractComponent.java:1166)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at com.vaadin.ui.Button.fireClick(Button.java:380)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at com.vaadin.ui.Button.changeVariables(Button.java:196)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.handleVariableBurst(AbstractCommunicationManager.java:1297)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.handleVariables(AbstractCommunicationManager.java:1217)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.doHandleUidlRequest(AbstractCommunicationManager.java:733)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at com.vaadin.terminal.gwt.server.CommunicationManager.handleUidlRequest(CommunicationManager.java:296)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at com.vaadin.terminal.gwt.server.AbstractApplicationServlet.service(AbstractApplicationServlet.java:483)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:550)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:486)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:517)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:229)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:970)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:414)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:187)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:904)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.eclipse.jetty.server.Server.handle(Server.java:347)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:590)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.eclipse.jetty.server.HttpConnection$RequestHandler.content(HttpConnection.java:1071)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:823)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:220)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.eclipse.jetty.server.HttpConnection.handle(HttpConnection.java:411)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:535)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:40)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:529)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at java.lang.Thread.run(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | Caused by: org.apache.cxf.jaxrs.client.ClientWebApplicationException: java.lang.IllegalArgumentException: IllegalArgumentException invoking http://localhost:70000/ussd/ussdap.php: port out of range:70000
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.apache.cxf.jaxrs.client.AbstractClient.checkClientException(AbstractClient.java:501)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.apache.cxf.jaxrs.client.AbstractClient.preProcessResult(AbstractClient.java:488)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:800)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	... 45 more
+INFO   | jvm 1    | 2017/01/26 21:57:13 | Caused by: java.lang.IllegalArgumentException: IllegalArgumentException invoking http://localhost:70000/ussd/ussdap.php: port out of range:70000
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1457)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1447)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:658)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:795)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	... 45 more
+INFO   | jvm 1    | 2017/01/26 21:57:13 | Caused by: java.lang.IllegalArgumentException: port out of range:70000
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at java.net.InetSocketAddress.checkPort(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at java.net.InetSocketAddress.<init>(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at sun.net.NetworkClient.doConnect(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at sun.net.www.http.HttpClient.New(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at sun.net.www.http.HttpClient.New(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1394)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1336)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:42)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1414)
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 	... 50 more
+INFO   | jvm 1    | 2017/01/26 21:57:13 | 21:57:13,271 INFO TabViewUssdImpl -  USSD Request sending status : Failed ........
+INFO   | jvm 1    | 2017/01/26 21:57:22 | 21:57:22,517 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94778039893, requestId=1485448042517, vlrAddress=some vlr address, sessionId=2, applicationId=APP_033027, message=*123*, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/26 21:57:22 | 21:57:22,526 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/26 21:57:22 | 21:57:22,526 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+STATUS | wrapper  | 2017/01/26 22:02:12 | CTRL-C trapped.  Shutting down.
+INFO   | jvm 1    | 2017/01/26 22:02:12 | 22:02:12,751 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2017/01/26 22:02:12 | log4j:ERROR Failed to rename [logs/sdp-sdk-debug.log] to [logs/sdp-sdk-debug.log.2017-01-26-21.log].
+INFO   | jvm 1    | 2017/01/26 22:02:12 | 22:02:12,751 INFO MchoiceSdpSdkStarter -  ============== mChoice SDP Simulator Stopped ===========
+INFO   | jvm 1    | 2017/01/26 22:02:12 | 22:02:12,752 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2017/01/26 22:02:13 | 22:02:13,514 INFO / -  Closing Spring root WebApplicationContext
+STATUS | wrapper  | 2017/01/26 22:02:14 | <-- Wrapper Stopped
+STATUS | wrapper  | 2017/01/27 20:12:15 | --> Wrapper Started as Console
+STATUS | wrapper  | 2017/01/27 20:12:15 | Launching a JVM...
+INFO   | jvm 1    | 2017/01/27 20:12:21 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2017/01/27 20:12:21 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2017/01/27 20:12:21 | 
+INFO   | jvm 1    | 2017/01/27 20:12:21 | 
+INFO   | jvm 1    | 2017/01/27 20:12:21 | WARNING - Unable to load the Wrapper's native library because none of the
+INFO   | jvm 1    | 2017/01/27 20:12:21 |           following files:
+INFO   | jvm 1    | 2017/01/27 20:12:21 |             wrapper-windows-x86-64.dll
+INFO   | jvm 1    | 2017/01/27 20:12:21 |             wrapper.dll
+INFO   | jvm 1    | 2017/01/27 20:12:21 |           could be located on the following java.library.path:
+INFO   | jvm 1    | 2017/01/27 20:12:21 |             C:\Users\Sajitha\Desktop\sdk-standalone-1.0.147\lib
+INFO   | jvm 1    | 2017/01/27 20:12:21 |           Please see the documentation for the wrapper.java.library.path
+INFO   | jvm 1    | 2017/01/27 20:12:21 |           configuration property.
+INFO   | jvm 1    | 2017/01/27 20:12:21 |           System signals will not be handled correctly.
+INFO   | jvm 1    | 2017/01/27 20:12:21 | 
+INFO   | jvm 1    | 2017/01/27 20:12:21 | 20:12:21,422 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2017/01/27 20:12:21 | 20:12:21,453 INFO MchoiceSdpSdkStarter -  ============= mChoice SDP Simulator Started ============
+INFO   | jvm 1    | 2017/01/27 20:12:21 | 20:12:21,453 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2017/01/27 20:12:21 | 20:12:21,469 INFO JettyServerStarter -  Starting mChoice SDP SDK Server on Port[10001]
+INFO   | jvm 1    | 2017/01/27 20:12:24 | 20:12:24,458 INFO / -  Initializing Spring root WebApplicationContext
+INFO   | jvm 1    | 2017/01/27 20:12:25 | SLF4J: Class path contains multiple SLF4J bindings.
+INFO   | jvm 1    | 2017/01/27 20:12:25 | SLF4J: Found binding in [jar:file:/C:/Users/Sajitha/AppData/Local/Temp/jetty-0.0.0.0-10001-mchoice-sdp-sdk.war-_-any-/webapp/WEB-INF/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2017/01/27 20:12:25 | SLF4J: Found binding in [jar:file:/C:/Users/Sajitha/Desktop/sdk-standalone-1.0.147/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2017/01/27 20:12:25 | SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+INFO   | jvm 1    | 2017/01/27 20:12:35 | Message key not found []
+INFO   | jvm 1    | 2017/01/27 20:12:35 | Message key not found []
+INFO   | jvm 1    | 2017/01/27 20:13:22 | 20:13:22,718 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485528202717, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/27 20:13:23 | 20:13:23,212 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/27 20:13:23 | 20:13:23,220 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/27 20:15:01 | 20:15:01,875 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485528301875, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/27 20:15:02 | 20:15:02,202 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=password, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_000001, message=T-Shirts
+INFO   | jvm 1    | 2017/01/27 20:15:02 | 1. Small
+INFO   | jvm 1    | 2017/01/27 20:15:02 | 2. Medium
+INFO   | jvm 1    | 2017/01/27 20:15:02 | 3. Large
+INFO   | jvm 1    | 2017/01/27 20:15:02 | 
+INFO   | jvm 1    | 2017/01/27 20:15:02 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701272015, requestId=1485528302201, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/27 20:15:02 | 20:15:02,275 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/27 20:15:02 | 20:15:02,275 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/27 21:58:39 | Message key not found []
+INFO   | jvm 1    | 2017/01/27 21:58:39 | Message key not found []
+STATUS | wrapper  | 2017/01/27 22:43:35 | --> Wrapper Started as Console
+STATUS | wrapper  | 2017/01/27 22:43:35 | Launching a JVM...
+INFO   | jvm 1    | 2017/01/27 22:43:36 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2017/01/27 22:43:36 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2017/01/27 22:43:36 | 
+INFO   | jvm 1    | 2017/01/27 22:43:36 | 
+INFO   | jvm 1    | 2017/01/27 22:43:36 | WARNING - Unable to load the Wrapper's native library because none of the
+INFO   | jvm 1    | 2017/01/27 22:43:36 |           following files:
+INFO   | jvm 1    | 2017/01/27 22:43:36 |             wrapper-windows-x86-64.dll
+INFO   | jvm 1    | 2017/01/27 22:43:36 |             wrapper.dll
+INFO   | jvm 1    | 2017/01/27 22:43:36 |           could be located on the following java.library.path:
+INFO   | jvm 1    | 2017/01/27 22:43:36 |             C:\Users\Sajitha\Desktop\sdk-standalone-1.0.147\lib
+INFO   | jvm 1    | 2017/01/27 22:43:36 |           Please see the documentation for the wrapper.java.library.path
+INFO   | jvm 1    | 2017/01/27 22:43:36 |           configuration property.
+INFO   | jvm 1    | 2017/01/27 22:43:36 |           System signals will not be handled correctly.
+INFO   | jvm 1    | 2017/01/27 22:43:36 | 
+INFO   | jvm 1    | 2017/01/27 22:43:36 | 22:43:36,520 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2017/01/27 22:43:36 | 22:43:36,521 INFO MchoiceSdpSdkStarter -  ============= mChoice SDP Simulator Started ============
+INFO   | jvm 1    | 2017/01/27 22:43:36 | 22:43:36,522 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2017/01/27 22:43:36 | 22:43:36,558 INFO JettyServerStarter -  Starting mChoice SDP SDK Server on Port[10001]
+INFO   | jvm 1    | 2017/01/27 22:43:38 | 22:43:38,912 INFO / -  Initializing Spring root WebApplicationContext
+INFO   | jvm 1    | 2017/01/27 22:43:39 | SLF4J: Class path contains multiple SLF4J bindings.
+INFO   | jvm 1    | 2017/01/27 22:43:39 | SLF4J: Found binding in [jar:file:/C:/Users/Sajitha/AppData/Local/Temp/jetty-0.0.0.0-10001-mchoice-sdp-sdk.war-_-any-/webapp/WEB-INF/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2017/01/27 22:43:39 | SLF4J: Found binding in [jar:file:/C:/Users/Sajitha/Desktop/sdk-standalone-1.0.147/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2017/01/27 22:43:39 | SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+INFO   | jvm 1    | 2017/01/27 22:43:41 | Message key not found []
+INFO   | jvm 1    | 2017/01/27 22:43:41 | Message key not found []
+INFO   | jvm 1    | 2017/01/27 22:43:52 | 22:43:52,485 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485537232484, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/27 22:43:53 | 22:43:52,944 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=password, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_000001, message=T-Shirts
+INFO   | jvm 1    | 2017/01/27 22:43:53 | 1. Small
+INFO   | jvm 1    | 2017/01/27 22:43:53 | 2. Medium
+INFO   | jvm 1    | 2017/01/27 22:43:53 | 3. Large
+INFO   | jvm 1    | 2017/01/27 22:43:53 | 
+INFO   | jvm 1    | 2017/01/27 22:43:53 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701272243, requestId=1485537232944, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/27 22:43:53 | 22:43:52,983 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/27 22:43:53 | 22:43:52,985 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/27 22:44:36 | 22:44:36,213 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485537276213, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/27 22:44:36 | 22:44:36,434 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=password, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_000001, message=T-Shirts
+INFO   | jvm 1    | 2017/01/27 22:44:36 | 1. Small
+INFO   | jvm 1    | 2017/01/27 22:44:36 | 2. Medium
+INFO   | jvm 1    | 2017/01/27 22:44:36 | 3. Large
+INFO   | jvm 1    | 2017/01/27 22:44:36 | 
+INFO   | jvm 1    | 2017/01/27 22:44:36 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701272244, requestId=1485537276434, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/27 22:44:36 | 22:44:36,443 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/27 22:44:36 | 22:44:36,445 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/27 22:44:58 | 22:44:58,339 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485537298339, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/27 22:44:58 | 22:44:58,670 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=password, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_000001, message=Enter Your ID, encoding=440}], sent response back to application [{timeStamp=1701272244, requestId=1485537298670, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/27 22:44:58 | 22:44:58,679 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/27 22:44:58 | 22:44:58,683 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/27 22:46:26 | 22:46:26,733 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485537386733, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/27 22:46:27 | 22:46:27,071 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=password, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_000001, message=You Purchased a small T-Shirt Your ID 1, encoding=440}], sent response back to application [{timeStamp=1701272246, requestId=1485537387070, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/27 22:46:27 | 22:46:27,079 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/27 22:46:27 | 22:46:27,081 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+STATUS | wrapper  | 2017/01/28 01:19:18 | --> Wrapper Started as Console
+STATUS | wrapper  | 2017/01/28 01:19:18 | Launching a JVM...
+INFO   | jvm 1    | 2017/01/28 01:19:18 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2017/01/28 01:19:18 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2017/01/28 01:19:18 | 
+INFO   | jvm 1    | 2017/01/28 01:19:18 | 
+INFO   | jvm 1    | 2017/01/28 01:19:18 | WARNING - Unable to load the Wrapper's native library because none of the
+INFO   | jvm 1    | 2017/01/28 01:19:18 |           following files:
+INFO   | jvm 1    | 2017/01/28 01:19:18 |             wrapper-windows-x86-64.dll
+INFO   | jvm 1    | 2017/01/28 01:19:18 |             wrapper.dll
+INFO   | jvm 1    | 2017/01/28 01:19:18 |           could be located on the following java.library.path:
+INFO   | jvm 1    | 2017/01/28 01:19:18 |             C:\Users\Sajitha\Desktop\sdk-standalone-1.0.147\lib
+INFO   | jvm 1    | 2017/01/28 01:19:18 |           Please see the documentation for the wrapper.java.library.path
+INFO   | jvm 1    | 2017/01/28 01:19:18 |           configuration property.
+INFO   | jvm 1    | 2017/01/28 01:19:18 |           System signals will not be handled correctly.
+INFO   | jvm 1    | 2017/01/28 01:19:18 | 
+INFO   | jvm 1    | 2017/01/28 01:19:19 | 01:19:19,214 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2017/01/28 01:19:19 | 01:19:19,216 INFO MchoiceSdpSdkStarter -  ============= mChoice SDP Simulator Started ============
+INFO   | jvm 1    | 2017/01/28 01:19:19 | 01:19:19,216 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2017/01/28 01:19:19 | 01:19:19,250 INFO JettyServerStarter -  Starting mChoice SDP SDK Server on Port[10001]
+INFO   | jvm 1    | 2017/01/28 01:19:21 | 01:19:21,902 INFO / -  Initializing Spring root WebApplicationContext
+INFO   | jvm 1    | 2017/01/28 01:19:22 | SLF4J: Class path contains multiple SLF4J bindings.
+INFO   | jvm 1    | 2017/01/28 01:19:22 | SLF4J: Found binding in [jar:file:/C:/Users/Sajitha/AppData/Local/Temp/jetty-0.0.0.0-10001-mchoice-sdp-sdk.war-_-any-/webapp/WEB-INF/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2017/01/28 01:19:22 | SLF4J: Found binding in [jar:file:/C:/Users/Sajitha/Desktop/sdk-standalone-1.0.147/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2017/01/28 01:19:22 | SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+INFO   | jvm 1    | 2017/01/28 01:19:28 | Message key not found []
+INFO   | jvm 1    | 2017/01/28 01:19:28 | Message key not found []
+INFO   | jvm 1    | 2017/01/28 01:20:00 | 01:20:00,568 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485546600568, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 01:20:04 | 01:20:04,556 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 01:20:04 | 01:20:04,561 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 01:20:04 | 01:20:04,660 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485546604660, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 01:20:06 | 01:20:06,667 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 01:20:06 | 01:20:06,670 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 01:21:26 | 01:21:26,689 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485546686689, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 01:21:29 | 01:21:29,217 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 01:21:29 | 01:21:29,221 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 01:22:00 | 01:22:00,554 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485546720554, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 01:22:00 | 01:22:00,891 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 01:22:00 | 01:22:00,892 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 01:22:17 | 01:22:17,678 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485546737678, vlrAddress=some vlr address, sessionId=1222, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 01:22:18 | 01:22:18,012 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 01:22:18 | 01:22:18,015 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 01:22:25 | 01:22:25,256 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485546745256, vlrAddress=some vlr address, sessionId=1222, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 01:22:25 | 01:22:25,315 ERROR AtRequestSender -  HTTP Error sending Message
+INFO   | jvm 1    | 2017/01/28 01:22:25 | log4j:ERROR Failed to rename [logs/sdp-sdk-error.log] to [logs/sdp-sdk-error.log.2017-01-26-22.log].
+INFO   | jvm 1    | 2017/01/28 01:22:25 | 01:22:25,339 INFO TabViewUssdImpl -  USSD Request sending status : HTTP-ERROR-CODE:404.......
+INFO   | jvm 1    | 2017/01/28 01:22:46 | 01:22:46,236 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485546766236, vlrAddress=some vlr address, sessionId=1222, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 01:22:46 | 01:22:46,243 ERROR AtRequestSender -  HTTP Error sending Message
+INFO   | jvm 1    | 2017/01/28 01:22:46 | 01:22:46,244 INFO TabViewUssdImpl -  USSD Request sending status : HTTP-ERROR-CODE:404.......
+INFO   | jvm 1    | 2017/01/28 03:13:48 | Message key not found []
+INFO   | jvm 1    | 2017/01/28 03:13:48 | Message key not found []
+INFO   | jvm 1    | 2017/01/28 03:18:34 | 03:18:34,764 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94778655129, requestId=1485553714764, deliveryStatusRequest=null, encoding=0, applicationId=APP_033050, message=Hello, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:18:34 | log4j:ERROR Failed to rename [logs/sdp-sdk-debug.log] to [logs/sdp-sdk-debug.log.2017-01-28-01.log].
+INFO   | jvm 1    | 2017/01/28 03:18:35 | 03:18:35,092 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddresses=[tel:94778655129], applicationId=APP_033050, message=This message is sent only to one user}], sent response back to application[{destinationResponses=[{timeStamp=20170128031835, address=tel:94778655129, requestId=1485553715092, statusDetail=Success, statusCode=S1000}], requestId=1485553715092, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 03:18:35 | 03:18:35,099 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:18:35 | 03:18:35,099 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:27:43 | 03:27:42,926 INFO AtRequestSender -  Sending Request [{sourceAddress=tel:94778655129, requestId=1485554262925, deliveryStatusRequest=null, encoding=0, applicationId=APP_033050, message=Hello, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:27:43 | 03:27:43,160 INFO SmsNcsRestService -  Received SMS message to send to customer[{password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddresses=[tel:94778655129], applicationId=APP_033050, message=You are subscribed with this app now!}], sent response back to application[{destinationResponses=[{timeStamp=20170128032743, address=tel:94778655129, requestId=1485554263160, statusDetail=Success, statusCode=S1000}], requestId=1485554263160, statusDetail=Success, version=1.0, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 03:27:43 | 03:27:43,170 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:27:43 | 03:27:43,174 INFO TabViewSmsImpl -  SMS sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:33:03 | 03:33:03,836 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485554583836, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=#678*, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:33:04 | 03:33:04,052 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 03:33:04 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 03:33:04 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 03:33:04 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 03:33:04 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 03:33:04 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 03:33:04 | 
+INFO   | jvm 1    | 2017/01/28 03:33:04 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280333, requestId=1485554584052, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 03:33:04 | 03:33:04,054 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:33:04 | 03:33:04,055 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:33:22 | 03:33:22,741 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485554602741, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:33:23 | 03:33:22,966 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 03:33:23 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 03:33:23 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 03:33:23 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 03:33:23 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 03:33:23 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 03:33:23 | 
+INFO   | jvm 1    | 2017/01/28 03:33:23 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280333, requestId=1485554602966, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 03:33:23 | 03:33:22,973 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:33:23 | 03:33:22,976 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:33:27 | 03:33:27,605 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485554607605, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:33:27 | 03:33:27,867 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased a medium T-Shirt Your ID 1, encoding=440}], sent response back to application [{timeStamp=1701280333, requestId=1485554607867, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 03:33:27 | 03:33:27,874 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:33:27 | 03:33:27,875 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:36:03 | 03:36:03,765 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485554763765, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:36:04 | 03:36:03,991 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=mt-fin, sessionId=123, applicationId=APP_033050, message=You Purchased a 250 coins. Thank you! , encoding=440}], sent response back to application [{timeStamp=1701280336, requestId=1485554763991, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+INFO   | jvm 1    | 2017/01/28 03:36:04 | 03:36:03,995 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:36:04 | 03:36:03,995 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:36:08 | 03:36:08,571 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485554768571, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:36:08 | 03:36:08,810 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 03:36:08 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 03:36:08 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 03:36:08 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 03:36:08 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 03:36:08 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 03:36:08 | 
+INFO   | jvm 1    | 2017/01/28 03:36:08 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280336, requestId=1485554768810, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 03:36:08 | 03:36:08,816 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:36:08 | 03:36:08,818 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:36:20 | 03:36:20,742 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485554780742, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:36:20 | 03:36:20,944 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 03:36:20 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 03:36:20 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 03:36:20 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 03:36:20 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 03:36:20 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 03:36:20 | 
+INFO   | jvm 1    | 2017/01/28 03:36:20 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280336, requestId=1485554780944, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 03:36:20 | 03:36:20,947 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:36:20 | 03:36:20,947 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:36:34 | 03:36:34,044 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485554794044, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:36:34 | 03:36:34,257 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=mt-fin, sessionId=123, applicationId=APP_033050, message=You Purchased a 250 coins. Thank you! , encoding=440}], sent response back to application [{timeStamp=1701280336, requestId=1485554794257, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+INFO   | jvm 1    | 2017/01/28 03:36:34 | 03:36:34,259 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:36:34 | 03:36:34,259 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:36:42 | 03:36:42,740 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485554802740, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:36:43 | 03:36:42,942 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=mt-fin, sessionId=123, applicationId=APP_033050, message=You Purchased a 250 coins. Thank you! , encoding=440}], sent response back to application [{timeStamp=1701280336, requestId=1485554802942, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+INFO   | jvm 1    | 2017/01/28 03:36:43 | 03:36:42,944 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:36:43 | 03:36:42,945 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:36:44 | 03:36:44,750 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485554804750, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:36:45 | 03:36:44,960 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=mt-fin, sessionId=123, applicationId=APP_033050, message=You Purchased a 250 coins. Thank you! , encoding=440}], sent response back to application [{timeStamp=1701280336, requestId=1485554804960, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+INFO   | jvm 1    | 2017/01/28 03:36:45 | 03:36:44,962 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:36:45 | 03:36:44,962 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:36:45 | 03:36:44,990 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485554804990, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:36:45 | 03:36:45,277 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=mt-fin, sessionId=123, applicationId=APP_033050, message=You Purchased a 250 coins. Thank you! , encoding=440}], sent response back to application [{timeStamp=1701280336, requestId=1485554805277, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+INFO   | jvm 1    | 2017/01/28 03:36:45 | 03:36:45,280 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:36:45 | 03:36:45,281 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:36:45 | 03:36:45,319 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485554805319, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:36:45 | 03:36:45,542 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=mt-fin, sessionId=123, applicationId=APP_033050, message=You Purchased a 250 coins. Thank you! , encoding=440}], sent response back to application [{timeStamp=1701280336, requestId=1485554805542, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+INFO   | jvm 1    | 2017/01/28 03:36:45 | 03:36:45,545 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:36:45 | 03:36:45,545 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:36:45 | 03:36:45,579 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485554805579, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:36:45 | 03:36:45,788 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=mt-fin, sessionId=123, applicationId=APP_033050, message=You Purchased a 250 coins. Thank you! , encoding=440}], sent response back to application [{timeStamp=1701280336, requestId=1485554805788, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+INFO   | jvm 1    | 2017/01/28 03:36:45 | 03:36:45,791 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:36:45 | 03:36:45,792 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:36:45 | 03:36:45,839 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485554805839, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:36:46 | 03:36:46,063 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=mt-fin, sessionId=123, applicationId=APP_033050, message=You Purchased a 250 coins. Thank you! , encoding=440}], sent response back to application [{timeStamp=1701280336, requestId=1485554806062, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+INFO   | jvm 1    | 2017/01/28 03:36:46 | 03:36:46,065 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:36:46 | 03:36:46,065 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:36:46 | 03:36:46,092 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485554806092, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:36:46 | 03:36:46,305 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=mt-fin, sessionId=123, applicationId=APP_033050, message=You Purchased a 250 coins. Thank you! , encoding=440}], sent response back to application [{timeStamp=1701280336, requestId=1485554806305, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+INFO   | jvm 1    | 2017/01/28 03:36:46 | 03:36:46,307 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:36:46 | 03:36:46,307 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:36:46 | 03:36:46,380 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485554806380, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:36:46 | 03:36:46,596 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=mt-fin, sessionId=123, applicationId=APP_033050, message=You Purchased a 250 coins. Thank you! , encoding=440}], sent response back to application [{timeStamp=1701280336, requestId=1485554806596, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+INFO   | jvm 1    | 2017/01/28 03:36:46 | 03:36:46,603 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:36:46 | 03:36:46,604 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:36:46 | 03:36:46,651 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485554806651, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:36:46 | 03:36:46,881 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=mt-fin, sessionId=123, applicationId=APP_033050, message=You Purchased a 250 coins. Thank you! , encoding=440}], sent response back to application [{timeStamp=1701280336, requestId=1485554806880, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+INFO   | jvm 1    | 2017/01/28 03:36:46 | 03:36:46,884 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:36:46 | 03:36:46,884 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:36:46 | 03:36:46,927 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485554806927, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:36:47 | 03:36:47,150 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=mt-fin, sessionId=123, applicationId=APP_033050, message=You Purchased a 250 coins. Thank you! , encoding=440}], sent response back to application [{timeStamp=1701280336, requestId=1485554807150, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+INFO   | jvm 1    | 2017/01/28 03:36:47 | 03:36:47,156 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:36:47 | 03:36:47,157 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:42:47 | 03:42:47,728 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485555167728, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:42:48 | 03:42:47,969 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 03:42:48 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 03:42:48 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 03:42:48 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 03:42:48 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 03:42:48 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 03:42:48 | 
+INFO   | jvm 1    | 2017/01/28 03:42:48 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280342, requestId=1485555167969, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 03:42:48 | 03:42:47,972 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:42:48 | 03:42:47,973 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:42:56 | 03:42:56,369 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485555176369, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:42:56 | 03:42:56,577 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=mt-fin, sessionId=123, applicationId=APP_033050, message=You Purchased a 250 coins. Thank you! , encoding=440}], sent response back to application [{timeStamp=1701280342, requestId=1485555176577, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+INFO   | jvm 1    | 2017/01/28 03:42:56 | 03:42:56,579 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:42:56 | 03:42:56,580 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:44:15 | 03:44:15,326 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485555255326, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:44:15 | 03:44:15,540 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=mt-fin, sessionId=123, applicationId=APP_033050, message=You Purchased a 250 coins. Thank you! , encoding=440}], sent response back to application [{timeStamp=1701280344, requestId=1485555255540, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+INFO   | jvm 1    | 2017/01/28 03:44:15 | 03:44:15,544 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:44:15 | 03:44:15,544 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:45:54 | 03:45:53,979 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485555353979, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:45:54 | 03:45:54,223 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 03:45:54 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 03:45:54 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 03:45:54 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 03:45:54 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 03:45:54 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 03:45:54 | 
+INFO   | jvm 1    | 2017/01/28 03:45:54 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280345, requestId=1485555354222, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 03:45:54 | 03:45:54,229 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:45:54 | 03:45:54,230 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:46:04 | 03:46:04,386 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485555364386, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:46:04 | 03:46:04,611 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=mt-fin, sessionId=123, applicationId=APP_033050, message=You Purchased a 250 coins. Thank you! , encoding=440}], sent response back to application [{timeStamp=1701280346, requestId=1485555364611, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+INFO   | jvm 1    | 2017/01/28 03:46:04 | 03:46:04,617 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:46:04 | 03:46:04,619 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:46:31 | 03:46:31,227 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485555391227, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:46:31 | 03:46:31,460 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 03:46:31 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 03:46:31 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 03:46:31 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 03:46:31 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 03:46:31 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 03:46:31 | 
+INFO   | jvm 1    | 2017/01/28 03:46:31 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280346, requestId=1485555391460, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 03:46:31 | 03:46:31,468 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:46:31 | 03:46:31,469 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:46:58 | 03:46:58,052 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485555418052, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=#657#, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:46:58 | 03:46:58,268 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased a medium T-Shirt Your ID #657#, encoding=440}], sent response back to application [{timeStamp=1701280346, requestId=1485555418268, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 03:46:58 | 03:46:58,274 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:46:58 | 03:46:58,275 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:47:14 | 03:47:13,972 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485555433972, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=#657#, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:47:14 | 03:47:14,190 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 03:47:14 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 03:47:14 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 03:47:14 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 03:47:14 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 03:47:14 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 03:47:14 | 
+INFO   | jvm 1    | 2017/01/28 03:47:14 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280347, requestId=1485555434190, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 03:47:14 | 03:47:14,197 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:47:14 | 03:47:14,199 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:47:22 | 03:47:22,747 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485555442747, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:47:23 | 03:47:22,967 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 03:47:23 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 03:47:23 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 03:47:23 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 03:47:23 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 03:47:23 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 03:47:23 | 
+INFO   | jvm 1    | 2017/01/28 03:47:23 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280347, requestId=1485555442967, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 03:47:23 | 03:47:22,975 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:47:23 | 03:47:22,977 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:47:27 | 03:47:27,626 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485555447626, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:47:27 | 03:47:27,840 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased a medium T-Shirt Your ID 2, encoding=440}], sent response back to application [{timeStamp=1701280347, requestId=1485555447840, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 03:47:27 | 03:47:27,845 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:47:27 | 03:47:27,847 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:50:11 | 03:50:11,348 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485555611348, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=#658#, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:50:11 | 03:50:11,568 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased a 750 coins. Thank you!#658#, encoding=440}], sent response back to application [{timeStamp=1701280350, requestId=1485555611568, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 03:50:11 | 03:50:11,570 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:50:11 | 03:50:11,570 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:50:15 | 03:50:15,395 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485555615395, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=#658#, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:50:15 | 03:50:15,601 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 03:50:15 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 03:50:15 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 03:50:15 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 03:50:15 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 03:50:15 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 03:50:15 | 
+INFO   | jvm 1    | 2017/01/28 03:50:15 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280350, requestId=1485555615601, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 03:50:15 | 03:50:15,610 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:50:15 | 03:50:15,611 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:50:30 | 03:50:30,147 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485555630147, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:50:30 | 03:50:30,368 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased a 750 coins. Thank you!2, encoding=440}], sent response back to application [{timeStamp=1701280350, requestId=1485555630368, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 03:50:30 | 03:50:30,372 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:50:30 | 03:50:30,373 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:51:05 | 03:51:05,514 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485555665514, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=#657#, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:51:05 | 03:51:05,731 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!#657#, encoding=440}], sent response back to application [{timeStamp=1701280351, requestId=1485555665731, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 03:51:05 | 03:51:05,738 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:51:05 | 03:51:05,741 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:51:15 | 03:51:15,163 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485555675163, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=#657#, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:51:15 | 03:51:15,369 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 03:51:15 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 03:51:15 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 03:51:15 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 03:51:15 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 03:51:15 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 03:51:15 | 
+INFO   | jvm 1    | 2017/01/28 03:51:15 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280351, requestId=1485555675368, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 03:51:15 | 03:51:15,376 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:51:15 | 03:51:15,378 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 03:59:09 | 03:59:09,732 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485556149732, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 03:59:09 | 03:59:09,945 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!2, encoding=440}], sent response back to application [{timeStamp=1701280359, requestId=1485556149944, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 03:59:10 | 03:59:09,950 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 03:59:10 | 03:59:09,951 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 04:23:30 | 04:23:30,424 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485557610424, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=#657#, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 04:23:30 | log4j:ERROR Failed to rename [logs/sdp-sdk-debug.log] to [logs/sdp-sdk-debug.log.2017-01-28-03.log].
+INFO   | jvm 1    | 2017/01/28 04:23:30 | 04:23:30,648 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 04:23:30 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 04:23:30 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 04:23:30 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 04:23:30 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 04:23:30 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 04:23:30 | 
+INFO   | jvm 1    | 2017/01/28 04:23:30 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280423, requestId=1485557610648, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 04:23:30 | 04:23:30,660 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 04:23:30 | 04:23:30,660 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 04:23:43 | 04:23:43,812 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485557623812, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 04:23:44 | 04:23:44,028 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 04:23:44 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 04:23:44 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 04:23:44 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 04:23:44 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 04:23:44 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 04:23:44 | 
+INFO   | jvm 1    | 2017/01/28 04:23:44 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280423, requestId=1485557624028, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 04:23:44 | 04:23:44,035 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 04:23:44 | 04:23:44,037 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 04:23:48 | 04:23:48,296 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485557628296, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 04:23:48 | 04:23:48,628 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=mt-fin, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280423, requestId=1485557628628, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+INFO   | jvm 1    | 2017/01/28 04:23:48 | 04:23:48,634 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 04:23:48 | 04:23:48,636 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 04:35:38 | 04:35:38,226 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485558338226, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=#657#, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 04:35:38 | 04:35:38,455 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 04:35:38 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 04:35:38 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 04:35:38 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 04:35:38 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 04:35:38 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 04:35:38 | 
+INFO   | jvm 1    | 2017/01/28 04:35:38 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280435, requestId=1485558338455, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 04:35:38 | 04:35:38,457 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 04:35:38 | 04:35:38,458 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 04:35:52 | 04:35:52,114 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485558352114, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 04:35:52 | 04:35:52,317 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=mt-fin, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280435, requestId=1485558352317, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+INFO   | jvm 1    | 2017/01/28 04:35:52 | 04:35:52,319 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 04:35:52 | 04:35:52,320 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 04:40:38 | 04:40:37,993 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485558637993, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=#658#, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 04:40:38 | 04:40:38,235 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 04:40:38 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 04:40:38 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 04:40:38 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 04:40:38 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 04:40:38 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 04:40:38 | 
+INFO   | jvm 1    | 2017/01/28 04:40:38 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280440, requestId=1485558638235, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 04:40:38 | 04:40:38,237 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 04:40:38 | 04:40:38,237 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 04:40:52 | 04:40:52,578 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485558652578, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 04:40:52 | 04:40:52,803 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=mt-fin, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280440, requestId=1485558652803, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+INFO   | jvm 1    | 2017/01/28 04:40:52 | 04:40:52,808 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 04:40:52 | 04:40:52,811 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 04:42:05 | 04:42:05,587 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485558725587, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=#658#, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 04:42:05 | 04:42:05,804 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 04:42:05 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 04:42:05 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 04:42:05 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 04:42:05 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 04:42:05 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 04:42:05 | 
+INFO   | jvm 1    | 2017/01/28 04:42:05 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280442, requestId=1485558725804, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 04:42:05 | 04:42:05,810 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 04:42:05 | 04:42:05,811 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 04:42:15 | 04:42:15,154 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485558735154, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 04:42:15 | 04:42:15,376 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=mt-fin, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280442, requestId=1485558735376, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+INFO   | jvm 1    | 2017/01/28 04:42:15 | 04:42:15,380 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 04:42:15 | 04:42:15,380 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 04:43:36 | 04:43:36,675 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485558816675, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 04:43:36 | 04:43:36,905 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=mt-fin, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280443, requestId=1485558816905, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+INFO   | jvm 1    | 2017/01/28 04:43:36 | 04:43:36,908 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 04:43:36 | 04:43:36,908 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 04:47:47 | 04:47:47,954 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485559067954, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=#657#, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 04:47:48 | 04:47:48,181 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 04:47:48 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 04:47:48 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 04:47:48 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 04:47:48 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 04:47:48 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 04:47:48 | 
+INFO   | jvm 1    | 2017/01/28 04:47:48 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280447, requestId=1485559068181, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 04:47:48 | 04:47:48,191 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 04:47:48 | 04:47:48,194 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 04:48:01 | 04:48:01,257 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485559081257, vlrAddress=some vlr address, sessionId=123, applicationId=APP_033050, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 04:48:01 | 04:48:01,461 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=mt-fin, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280448, requestId=1485559081461, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+INFO   | jvm 1    | 2017/01/28 04:48:01 | 04:48:01,466 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 04:48:01 | 04:48:01,466 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+STATUS | wrapper  | 2017/01/28 05:00:46 | --> Wrapper Started as Console
+STATUS | wrapper  | 2017/01/28 05:00:47 | Launching a JVM...
+INFO   | jvm 1    | 2017/01/28 05:00:47 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2017/01/28 05:00:47 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2017/01/28 05:00:47 | 
+INFO   | jvm 1    | 2017/01/28 05:00:47 | 
+INFO   | jvm 1    | 2017/01/28 05:00:47 | WARNING - Unable to load the Wrapper's native library because none of the
+INFO   | jvm 1    | 2017/01/28 05:00:47 |           following files:
+INFO   | jvm 1    | 2017/01/28 05:00:47 |             wrapper-windows-x86-64.dll
+INFO   | jvm 1    | 2017/01/28 05:00:47 |             wrapper.dll
+INFO   | jvm 1    | 2017/01/28 05:00:47 |           could be located on the following java.library.path:
+INFO   | jvm 1    | 2017/01/28 05:00:47 |             C:\Users\Sajitha\Desktop\sdk-standalone-1.0.147\lib
+INFO   | jvm 1    | 2017/01/28 05:00:47 |           Please see the documentation for the wrapper.java.library.path
+INFO   | jvm 1    | 2017/01/28 05:00:47 |           configuration property.
+INFO   | jvm 1    | 2017/01/28 05:00:47 |           System signals will not be handled correctly.
+INFO   | jvm 1    | 2017/01/28 05:00:47 | 
+INFO   | jvm 1    | 2017/01/28 05:00:47 | 05:00:47,844 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2017/01/28 05:00:47 | 05:00:47,848 INFO MchoiceSdpSdkStarter -  ============= mChoice SDP Simulator Started ============
+INFO   | jvm 1    | 2017/01/28 05:00:47 | 05:00:47,848 INFO MchoiceSdpSdkStarter -  ========================================================
+INFO   | jvm 1    | 2017/01/28 05:00:47 | 05:00:47,890 INFO JettyServerStarter -  Starting mChoice SDP SDK Server on Port[10001]
+INFO   | jvm 1    | 2017/01/28 05:00:50 | 05:00:50,022 INFO / -  Initializing Spring root WebApplicationContext
+INFO   | jvm 1    | 2017/01/28 05:00:50 | SLF4J: Class path contains multiple SLF4J bindings.
+INFO   | jvm 1    | 2017/01/28 05:00:50 | SLF4J: Found binding in [jar:file:/C:/Users/Sajitha/AppData/Local/Temp/jetty-0.0.0.0-10001-mchoice-sdp-sdk.war-_-any-/webapp/WEB-INF/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2017/01/28 05:00:50 | SLF4J: Found binding in [jar:file:/C:/Users/Sajitha/Desktop/sdk-standalone-1.0.147/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2017/01/28 05:00:50 | SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+INFO   | jvm 1    | 2017/01/28 05:01:55 | Message key not found []
+INFO   | jvm 1    | 2017/01/28 05:01:55 | Message key not found []
+INFO   | jvm 1    | 2017/01/28 05:02:12 | 05:02:12,871 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485559932870, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:02:13 | 05:02:13,235 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 05:02:13 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 05:02:13 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 05:02:13 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 05:02:13 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 05:02:13 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 05:02:13 | 
+INFO   | jvm 1    | 2017/01/28 05:02:13 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280502, requestId=1485559933235, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:02:13 | 05:02:13,256 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:02:13 | 05:02:13,258 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:02:23 | 05:02:23,419 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485559943419, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:02:23 | 05:02:23,640 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=mt-fin, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280502, requestId=1485559943640, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+INFO   | jvm 1    | 2017/01/28 05:02:23 | 05:02:23,649 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:02:23 | 05:02:23,652 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:03:24 | 05:03:24,480 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485560004480, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:03:24 | 05:03:24,704 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=password, destinationAddress=mt-fin, sessionId=123, applicationId=APP_000001, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280503, requestId=1485560004704, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+INFO   | jvm 1    | 2017/01/28 05:03:24 | 05:03:24,707 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:03:24 | 05:03:24,707 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:03:53 | 05:03:53,595 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485560033595, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:03:53 | 05:03:53,808 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=password, destinationAddress=mt-fin, sessionId=123, applicationId=APP_000001, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280503, requestId=1485560033808, statusDetail=Invalid MSISDN Error, version=0.1, statusCode=E1325}]
+INFO   | jvm 1    | 2017/01/28 05:03:53 | 05:03:53,812 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:03:53 | 05:03:53,814 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:05:11 | 05:05:11,427 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485560111427, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:05:11 | 05:05:11,647 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 05:05:11 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 05:05:11 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 05:05:11 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 05:05:11 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 05:05:11 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 05:05:11 | 
+INFO   | jvm 1    | 2017/01/28 05:05:11 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280505, requestId=1485560111647, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:05:11 | 05:05:11,651 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:05:11 | 05:05:11,652 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:05:22 | 05:05:22,875 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485560122875, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:05:23 | 05:05:23,099 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!2, encoding=440}], sent response back to application [{timeStamp=1701280505, requestId=1485560123099, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:05:23 | 05:05:23,106 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:05:23 | 05:05:23,107 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:06:40 | 05:06:40,850 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485560200850, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=main, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:06:41 | 05:06:41,073 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280506, requestId=1485560201073, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:06:41 | 05:06:41,082 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:06:41 | 05:06:41,084 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:07:00 | 05:07:00,233 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485560220233, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=*678#, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:07:00 | 05:07:00,447 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280507, requestId=1485560220447, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:07:00 | 05:07:00,454 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:07:00 | 05:07:00,457 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:07:22 | 05:07:22,035 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485560242035, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:07:22 | 05:07:22,246 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280507, requestId=1485560242246, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:07:22 | 05:07:22,254 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:07:22 | 05:07:22,256 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:07:28 | 05:07:28,586 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485560248586, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:07:28 | 05:07:28,799 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 05:07:28 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 05:07:28 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 05:07:28 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 05:07:28 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 05:07:28 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 05:07:28 | 
+INFO   | jvm 1    | 2017/01/28 05:07:28 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280507, requestId=1485560248799, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:07:28 | 05:07:28,805 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:07:28 | 05:07:28,806 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:09:55 | 05:09:54,986 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485560394986, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:09:55 | 05:09:55,221 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 05:09:55 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 05:09:55 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 05:09:55 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 05:09:55 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 05:09:55 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 05:09:55 | 
+INFO   | jvm 1    | 2017/01/28 05:09:55 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280509, requestId=1485560395221, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:09:55 | 05:09:55,226 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:09:55 | 05:09:55,226 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:10:05 | 05:10:05,823 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485560405823, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:10:06 | 05:10:06,034 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280510, requestId=1485560406033, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:10:06 | 05:10:06,041 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:10:06 | 05:10:06,042 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:10:53 | 05:10:52,929 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485560452929, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=tgf, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:10:53 | 05:10:53,145 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 05:10:53 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 05:10:53 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 05:10:53 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 05:10:53 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 05:10:53 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 05:10:53 | 
+INFO   | jvm 1    | 2017/01/28 05:10:53 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280510, requestId=1485560453145, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:10:53 | 05:10:53,152 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:10:53 | 05:10:53,154 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:11:16 | 05:11:16,273 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485560476273, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:11:16 | 05:11:16,485 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280511, requestId=1485560476485, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:11:16 | 05:11:16,491 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:11:16 | 05:11:16,492 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:15:36 | 05:15:36,466 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485560736466, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:15:36 | 05:15:36,679 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 05:15:36 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 05:15:36 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 05:15:36 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 05:15:36 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 05:15:36 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 05:15:36 | 
+INFO   | jvm 1    | 2017/01/28 05:15:36 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280515, requestId=1485560736678, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:15:36 | 05:15:36,681 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:15:36 | 05:15:36,681 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:15:46 | 05:15:46,762 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485560746762, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:15:47 | 05:15:46,980 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280515, requestId=1485560746979, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:15:47 | 05:15:46,985 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:15:47 | 05:15:46,988 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:29:45 | 05:29:45,599 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485561585599, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=535, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:29:45 | 05:29:45,831 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 05:29:45 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 05:29:45 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 05:29:45 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 05:29:45 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 05:29:45 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 05:29:45 | 
+INFO   | jvm 1    | 2017/01/28 05:29:45 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280529, requestId=1485561585831, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:29:45 | 05:29:45,839 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:29:45 | 05:29:45,840 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:29:59 | 05:29:59,636 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485561599636, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=4, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:29:59 | 05:29:59,852 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280529, requestId=1485561599852, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:29:59 | 05:29:59,926 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:29:59 | 05:29:59,927 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:33:37 | 05:33:37,657 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485561817657, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=4, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:33:37 | 05:33:37,896 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 05:33:37 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 05:33:37 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 05:33:37 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 05:33:37 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 05:33:37 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 05:33:37 | 
+INFO   | jvm 1    | 2017/01/28 05:33:37 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280533, requestId=1485561817895, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:33:37 | 05:33:37,905 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:33:37 | 05:33:37,908 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:33:49 | 05:33:48,960 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485561828960, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=99, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:33:49 | 05:33:49,166 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 05:33:49 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 05:33:49 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 05:33:49 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 05:33:49 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 05:33:49 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 05:33:49 | 
+INFO   | jvm 1    | 2017/01/28 05:33:49 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280533, requestId=1485561829165, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:33:49 | 05:33:49,172 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:33:49 | 05:33:49,173 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:34:14 | 05:34:14,809 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485561854809, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=4, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:34:15 | 05:34:15,034 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280534, requestId=1485561855034, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:34:15 | 05:34:15,041 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:34:15 | 05:34:15,042 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:35:10 | 05:35:09,988 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485561909988, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=4, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:35:10 | 05:35:10,192 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 05:35:10 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 05:35:10 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 05:35:10 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 05:35:10 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 05:35:10 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 05:35:10 | 
+INFO   | jvm 1    | 2017/01/28 05:35:10 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280535, requestId=1485561910192, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:35:10 | 05:35:10,194 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:35:10 | 05:35:10,195 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:35:21 | 05:35:21,297 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485561921297, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=5, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:35:21 | 05:35:21,601 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Incorrect option, encoding=440}], sent response back to application [{timeStamp=1701280535, requestId=1485561921601, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:35:21 | 05:35:21,606 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:35:21 | 05:35:21,607 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:36:50 | 05:36:50,401 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485562010401, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=5, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:36:50 | 05:36:50,724 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Enter Your Purchase, encoding=440}], sent response back to application [{timeStamp=1701280536, requestId=1485562010724, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:36:50 | 05:36:50,731 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:36:50 | 05:36:50,732 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:53:51 | 05:53:51,830 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563031830, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=5, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:53:52 | 05:53:52,059 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 05:53:52 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 05:53:52 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 05:53:52 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 05:53:52 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 05:53:52 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 05:53:52 | 
+INFO   | jvm 1    | 2017/01/28 05:53:52 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280553, requestId=1485563032059, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:53:52 | 05:53:52,066 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:53:52 | 05:53:52,067 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:54:07 | 05:54:07,034 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485563047034, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:54:07 | 05:54:07,351 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Incorrect option, encoding=440}], sent response back to application [{timeStamp=1701280554, requestId=1485563047351, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:54:07 | 05:54:07,353 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:54:07 | 05:54:07,353 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:55:56 | 05:55:56,491 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563156491, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:55:56 | 05:55:56,715 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 05:55:56 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 05:55:56 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 05:55:56 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 05:55:56 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 05:55:56 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 05:55:56 | 
+INFO   | jvm 1    | 2017/01/28 05:55:56 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280555, requestId=1485563156715, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:55:56 | 05:55:56,720 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:55:56 | 05:55:56,723 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:56:06 | 05:56:06,794 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485563166794, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=4, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:56:07 | 05:56:07,008 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 6250 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280556, requestId=1485563167008, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:56:07 | 05:56:07,010 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:56:07 | 05:56:07,011 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:56:21 | 05:56:21,377 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563181377, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=4, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:56:21 | 05:56:21,590 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 05:56:21 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 05:56:21 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 05:56:21 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 05:56:21 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 05:56:21 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 05:56:21 | 
+INFO   | jvm 1    | 2017/01/28 05:56:21 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280556, requestId=1485563181590, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:56:21 | 05:56:21,597 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:56:21 | 05:56:21,599 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:56:28 | 05:56:28,033 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563188033, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:56:28 | 05:56:28,244 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 05:56:28 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 05:56:28 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 05:56:28 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 05:56:28 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 05:56:28 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 05:56:28 | 
+INFO   | jvm 1    | 2017/01/28 05:56:28 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280556, requestId=1485563188244, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:56:28 | 05:56:28,246 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:56:28 | 05:56:28,247 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:56:42 | 05:56:42,481 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485563202481, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:56:42 | 05:56:42,698 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 250 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280556, requestId=1485563202698, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:56:42 | 05:56:42,707 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:56:42 | 05:56:42,710 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:56:49 | 05:56:48,986 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563208986, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:56:49 | 05:56:49,200 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 05:56:49 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 05:56:49 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 05:56:49 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 05:56:49 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 05:56:49 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 05:56:49 | 
+INFO   | jvm 1    | 2017/01/28 05:56:49 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280556, requestId=1485563209200, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:56:49 | 05:56:49,207 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:56:49 | 05:56:49,208 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:56:57 | 05:56:57,865 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485563217865, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:56:58 | 05:56:58,076 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 250 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280556, requestId=1485563218076, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:56:58 | 05:56:58,079 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:56:58 | 05:56:58,079 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:57:07 | 05:57:07,826 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485563227826, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:57:08 | 05:57:08,029 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 2500 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280557, requestId=1485563228029, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:57:08 | 05:57:08,031 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:57:08 | 05:57:08,031 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:58:22 | 05:58:22,954 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563302954, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:58:23 | 05:58:23,175 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 05:58:23 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 05:58:23 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 05:58:23 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 05:58:23 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 05:58:23 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 05:58:23 | 
+INFO   | jvm 1    | 2017/01/28 05:58:23 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280558, requestId=1485563303175, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:58:23 | 05:58:23,181 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:58:23 | 05:58:23,182 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:58:35 | 05:58:35,419 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485563315419, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=4, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:58:35 | 05:58:35,739 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Enter Your Purchase, encoding=440}], sent response back to application [{timeStamp=1701280558, requestId=1485563315738, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:58:35 | 05:58:35,744 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:58:35 | 05:58:35,744 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:59:21 | 05:59:20,994 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563360994, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=4, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:59:21 | 05:59:21,215 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 05:59:21 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 05:59:21 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 05:59:21 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 05:59:21 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 05:59:21 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 05:59:21 | 
+INFO   | jvm 1    | 2017/01/28 05:59:21 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280559, requestId=1485563361215, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:59:21 | 05:59:21,222 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:59:21 | 05:59:21,224 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:59:30 | 05:59:30,363 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563370363, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=4, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:59:30 | 05:59:30,578 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 05:59:30 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 05:59:30 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 05:59:30 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 05:59:30 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 05:59:30 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 05:59:30 | 
+INFO   | jvm 1    | 2017/01/28 05:59:30 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280559, requestId=1485563370578, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:59:30 | 05:59:30,581 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:59:30 | 05:59:30,581 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:59:39 | 05:59:39,811 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485563379811, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=4, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:59:40 | 05:59:40,017 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 6250 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280559, requestId=1485563380016, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:59:40 | 05:59:40,115 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:59:40 | 05:59:40,116 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 05:59:59 | 05:59:59,634 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563399634, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=4, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 05:59:59 | 05:59:59,845 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 05:59:59 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 05:59:59 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 05:59:59 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 05:59:59 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 05:59:59 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 05:59:59 | 
+INFO   | jvm 1    | 2017/01/28 05:59:59 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280559, requestId=1485563399845, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 05:59:59 | 05:59:59,849 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 05:59:59 | 05:59:59,851 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:00:08 | 06:00:08,243 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563408243, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:00:08 | log4j:ERROR Failed to rename [logs/sdp-sdk-debug.log] to [logs/sdp-sdk-debug.log.2017-01-28-05.log].
+INFO   | jvm 1    | 2017/01/28 06:00:08 | 06:00:08,461 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 06:00:08 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 06:00:08 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 06:00:08 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 06:00:08 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 06:00:08 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 06:00:08 | 
+INFO   | jvm 1    | 2017/01/28 06:00:08 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280600, requestId=1485563408461, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:00:08 | 06:00:08,464 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:00:08 | 06:00:08,464 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:00:24 | 06:00:24,737 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485563424737, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:00:25 | 06:00:24,962 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 6250 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280600, requestId=1485563424962, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:00:25 | 06:00:25,106 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:00:25 | 06:00:25,107 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:03:11 | 06:03:11,201 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563591201, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=1, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:03:11 | 06:03:11,423 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 06:03:11 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 06:03:11 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 06:03:11 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 06:03:11 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 06:03:11 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 06:03:11 | 
+INFO   | jvm 1    | 2017/01/28 06:03:11 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280603, requestId=1485563591423, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:03:11 | 06:03:11,426 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:03:11 | 06:03:11,427 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:03:40 | 06:03:40,054 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563620053, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:03:40 | 06:03:40,266 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 06:03:40 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 06:03:40 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 06:03:40 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 06:03:40 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 06:03:40 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 06:03:40 | 
+INFO   | jvm 1    | 2017/01/28 06:03:40 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280603, requestId=1485563620266, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:03:40 | 06:03:40,271 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:03:40 | 06:03:40,273 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:03:49 | 06:03:49,061 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485563629061, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:03:49 | 06:03:49,287 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 6250 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280603, requestId=1485563629287, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:03:49 | 06:03:49,382 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:03:49 | 06:03:49,383 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:08:41 | 06:08:41,130 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563921130, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:08:41 | 06:08:41,361 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 06:08:41 | 1. s - 250 coins - Rs 1
+INFO   | jvm 1    | 2017/01/28 06:08:41 | 2. m - 750 coins - Rs 3
+INFO   | jvm 1    | 2017/01/28 06:08:41 | 3. l - 2500coins - Rs 5
+INFO   | jvm 1    | 2017/01/28 06:08:41 | 4. xl - 6250coins - Rs 10
+INFO   | jvm 1    | 2017/01/28 06:08:41 | 5. xxl - 20000coins - Rs 30
+INFO   | jvm 1    | 2017/01/28 06:08:41 | 
+INFO   | jvm 1    | 2017/01/28 06:08:41 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280608, requestId=1485563921361, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:08:41 | 06:08:41,364 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:08:41 | 06:08:41,364 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:08:55 | 06:08:55,228 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485563935228, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:08:55 | 06:08:55,442 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 6250 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280608, requestId=1485563935442, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:08:55 | 06:08:55,536 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:08:55 | 06:08:55,538 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:09:55 | 06:09:55,850 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485563995850, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:09:56 | 06:09:56,066 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 06:09:56 | 1. s
+INFO   | jvm 1    | 2017/01/28 06:09:56 | 2. m
+INFO   | jvm 1    | 2017/01/28 06:09:56 | 3. l
+INFO   | jvm 1    | 2017/01/28 06:09:56 | 4. xl
+INFO   | jvm 1    | 2017/01/28 06:09:56 | 5. xxl
+INFO   | jvm 1    | 2017/01/28 06:09:56 | 
+INFO   | jvm 1    | 2017/01/28 06:09:56 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280609, requestId=1485563996066, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:09:56 | 06:09:56,070 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:09:56 | 06:09:56,070 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:10:17 | 06:10:17,785 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485564017785, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:10:18 | 06:10:18,012 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 6250 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280610, requestId=1485564018012, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:10:18 | 06:10:18,097 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:10:18 | 06:10:18,097 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:11:10 | 06:11:10,750 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485564070750, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:11:11 | 06:11:10,988 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 06:11:11 | 1. s
+INFO   | jvm 1    | 2017/01/28 06:11:11 | 2. m
+INFO   | jvm 1    | 2017/01/28 06:11:11 | 3. l
+INFO   | jvm 1    | 2017/01/28 06:11:11 | 4. xl
+INFO   | jvm 1    | 2017/01/28 06:11:11 | 5. xxl
+INFO   | jvm 1    | 2017/01/28 06:11:11 | 
+INFO   | jvm 1    | 2017/01/28 06:11:11 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280611, requestId=1485564070988, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:11:11 | 06:11:10,993 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:11:11 | 06:11:10,996 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:11:19 | 06:11:19,347 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485564079347, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:11:19 | 06:11:19,647 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Incorrect option, encoding=440}], sent response back to application [{timeStamp=1701280611, requestId=1485564079647, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:11:19 | 06:11:19,654 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:11:19 | 06:11:19,655 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:22:06 | 06:22:06,355 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485564726355, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:22:06 | 06:22:06,574 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 06:22:06 | 1. s
+INFO   | jvm 1    | 2017/01/28 06:22:06 | 2. m
+INFO   | jvm 1    | 2017/01/28 06:22:06 | 3. l
+INFO   | jvm 1    | 2017/01/28 06:22:06 | 4. xl
+INFO   | jvm 1    | 2017/01/28 06:22:06 | 5. xxl
+INFO   | jvm 1    | 2017/01/28 06:22:06 | 
+INFO   | jvm 1    | 2017/01/28 06:22:06 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280622, requestId=1485564726573, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:22:06 | 06:22:06,579 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:22:06 | 06:22:06,580 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:22:36 | 06:22:36,301 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485564756301, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:22:36 | 06:22:36,515 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 06:22:36 | 1. s
+INFO   | jvm 1    | 2017/01/28 06:22:36 | 2. m
+INFO   | jvm 1    | 2017/01/28 06:22:36 | 3. l
+INFO   | jvm 1    | 2017/01/28 06:22:36 | 4. xl
+INFO   | jvm 1    | 2017/01/28 06:22:36 | 5. xxl
+INFO   | jvm 1    | 2017/01/28 06:22:36 | 
+INFO   | jvm 1    | 2017/01/28 06:22:36 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280622, requestId=1485564756515, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:22:36 | 06:22:36,520 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:22:36 | 06:22:36,520 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:23:20 | 06:23:20,597 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485564800597, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=3, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:23:20 | 06:23:20,813 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 06:23:20 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 06:23:20 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 06:23:20 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 06:23:20 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 06:23:20 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 06:23:20 | 
+INFO   | jvm 1    | 2017/01/28 06:23:20 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280623, requestId=1485564800813, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:23:20 | 06:23:20,818 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:23:20 | 06:23:20,818 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:23:30 | 06:23:30,907 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485564810907, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:23:31 | 06:23:31,000 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:23:31 | 06:23:31,000 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:24:04 | 06:24:04,281 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485564844281, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:24:04 | 06:24:04,494 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 06:24:04 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 06:24:04 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 06:24:04 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 06:24:04 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 06:24:04 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 06:24:04 | 
+INFO   | jvm 1    | 2017/01/28 06:24:04 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280624, requestId=1485564844494, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:24:04 | 06:24:04,497 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:24:04 | 06:24:04,497 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:24:13 | 06:24:13,715 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485564853715, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:24:14 | 06:24:13,948 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280624, requestId=1485564853948, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:24:14 | 06:24:14,034 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:24:14 | 06:24:14,034 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:29:26 | 06:29:26,889 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485565166889, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:29:27 | 06:29:27,294 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 06:29:27 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 06:29:27 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 06:29:27 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 06:29:27 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 06:29:27 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 06:29:27 | 
+INFO   | jvm 1    | 2017/01/28 06:29:27 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280629, requestId=1485565167294, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:29:27 | 06:29:27,300 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:29:27 | 06:29:27,301 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:29:35 | 06:29:35,778 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485565175778, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:29:36 | 06:29:36,135 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you!, encoding=440}], sent response back to application [{timeStamp=1701280629, requestId=1485565176135, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:29:36 | 06:29:36,180 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:29:36 | 06:29:36,180 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:39:25 | 06:39:25,003 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485565765003, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:39:25 | 06:39:25,415 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 06:39:25 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 06:39:25 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 06:39:25 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 06:39:25 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 06:39:25 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 06:39:25 | 
+INFO   | jvm 1    | 2017/01/28 06:39:25 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280639, requestId=1485565765414, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:39:25 | 06:39:25,417 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:39:25 | 06:39:25,417 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:40:11 | 06:40:11,883 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485565811883, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:40:12 | 06:40:12,244 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 06:40:12 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 06:40:12 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 06:40:12 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 06:40:12 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 06:40:12 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 06:40:12 | 
+INFO   | jvm 1    | 2017/01/28 06:40:12 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280640, requestId=1485565812244, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:40:12 | 06:40:12,247 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:40:12 | 06:40:12,248 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:40:19 | 06:40:19,332 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485565819332, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:40:19 | 06:40:19,730 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you! \n TOKEN ID -1, encoding=440}], sent response back to application [{timeStamp=1701280640, requestId=1485565819730, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:40:19 | 06:40:19,778 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:40:19 | 06:40:19,779 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:41:29 | 06:41:29,072 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485565889072, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:41:29 | 06:41:29,470 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 06:41:29 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 06:41:29 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 06:41:29 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 06:41:29 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 06:41:29 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 06:41:29 | 
+INFO   | jvm 1    | 2017/01/28 06:41:29 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280641, requestId=1485565889470, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:41:29 | 06:41:29,477 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:41:29 | 06:41:29,478 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:41:40 | 06:41:39,970 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485565899970, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:41:40 | 06:41:40,404 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you! \n TOKEN ID - QWER1, encoding=440}], sent response back to application [{timeStamp=1701280641, requestId=1485565900404, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:41:40 | 06:41:40,470 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:41:40 | 06:41:40,470 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:52:41 | 06:52:41,810 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485566561810, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:52:42 | 06:52:42,220 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 06:52:42 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 06:52:42 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 06:52:42 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 06:52:42 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 06:52:42 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 06:52:42 | 
+INFO   | jvm 1    | 2017/01/28 06:52:42 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280652, requestId=1485566562219, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:52:42 | 06:52:42,226 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:52:42 | 06:52:42,228 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:53:00 | 06:53:00,672 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485566580672, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:53:01 | 06:53:01,052 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you! \n TOKEN ID - QWER1, encoding=440}], sent response back to application [{timeStamp=1701280653, requestId=1485566581052, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:53:01 | 06:53:01,098 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:53:01 | 06:53:01,098 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 06:58:56 | 06:58:56,052 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485566936052, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 06:58:56 | 06:58:56,506 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 06:58:56 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 06:58:56 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 06:58:56 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 06:58:56 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 06:58:56 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 06:58:56 | 
+INFO   | jvm 1    | 2017/01/28 06:58:56 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280658, requestId=1485566936506, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 06:58:56 | 06:58:56,508 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 06:58:56 | 06:58:56,508 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 07:12:51 | 07:12:51,403 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94771122336, requestId=1485567771403, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 07:12:51 | log4j:ERROR Failed to rename [logs/sdp-sdk-debug.log] to [logs/sdp-sdk-debug.log.2017-01-28-06.log].
+INFO   | jvm 1    | 2017/01/28 07:12:51 | 07:12:51,853 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mt-fin, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=You Purchased 750 coins. Thank you! \n TOKEN ID - QWER1, encoding=440}], sent response back to application [{timeStamp=1701280712, requestId=1485567771853, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 07:12:51 | 07:12:51,899 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 07:12:51 | 07:12:51,899 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......
+INFO   | jvm 1    | 2017/01/28 07:27:05 | 07:27:05,342 INFO AtRequestSender -  Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485568625342, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=2, encoding=440, version=1.0}] 
+INFO   | jvm 1    | 2017/01/28 07:27:05 | 07:27:05,770 INFO UssdNcsRestService -  Received USSD message to send to customer[{ussdOperation=mo-cont, password=2749bbeadec3a2907eff38dd8e389bcc, destinationAddress=tel:94771122336, sessionId=123, applicationId=APP_033050, message=Purchase Mode
+INFO   | jvm 1    | 2017/01/28 07:27:05 | 1. 250 coins - Rs.1
+INFO   | jvm 1    | 2017/01/28 07:27:05 | 2. 750 coins - Rs.3
+INFO   | jvm 1    | 2017/01/28 07:27:05 | 3. 2500 coins - Rs.5
+INFO   | jvm 1    | 2017/01/28 07:27:05 | 4. 6250 coins - Rs.10
+INFO   | jvm 1    | 2017/01/28 07:27:05 | 5. 20000 coins - Rs.30
+INFO   | jvm 1    | 2017/01/28 07:27:05 | 
+INFO   | jvm 1    | 2017/01/28 07:27:05 | 99. Exit, encoding=440}], sent response back to application [{timeStamp=1701280727, requestId=1485568625770, statusDetail=Success, version=0.1, statusCode=S1000}]
+INFO   | jvm 1    | 2017/01/28 07:27:05 | 07:27:05,776 INFO AtRequestSender -  Message Successfully sent
+INFO   | jvm 1    | 2017/01/28 07:27:05 | 07:27:05,776 INFO TabViewUssdImpl -  USSD Request sending status : SUCCESS.......

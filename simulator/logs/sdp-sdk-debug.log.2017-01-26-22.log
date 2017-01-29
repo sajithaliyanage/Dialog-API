@@ -1,0 +1,211 @@
+26 Jan 2017 21:23:35,480 INFO  [][WrapperListener_start_runner] MchoiceSdpSdkStarter - ========================================================
+26 Jan 2017 21:23:35,485 INFO  [][WrapperListener_start_runner] MchoiceSdpSdkStarter - ============= mChoice SDP Simulator Started ============
+26 Jan 2017 21:23:35,485 INFO  [][WrapperListener_start_runner] MchoiceSdpSdkStarter - ========================================================
+26 Jan 2017 21:23:35,525 INFO  [][Thread-0] JettyServerStarter - Starting mChoice SDP SDK Server on Port[10001]
+26 Jan 2017 21:23:37,440 INFO  [][Thread-0] / - Initializing Spring root WebApplicationContext
+26 Jan 2017 21:24:52,772 INFO  [][qtp1479085298-37] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94771122336, requestId=1485446092772, vlrAddress=some vlr address, sessionId=123, applicationId=APP_000001, message=#678*, encoding=440, version=1.0}] 
+26 Jan 2017 21:24:53,945 ERROR [][qtp1479085298-37] AtRequestSender - Error while sending message to application or application may not available for given port
+org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.interceptor.Fault: Could not send Message.
+	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:807)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:743)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:717)
+	at org.apache.cxf.jaxrs.client.WebClient.invoke(WebClient.java:262)
+	at org.apache.cxf.jaxrs.client.WebClient.post(WebClient.java:271)
+	at hms.kite.simulator.rest.AtRequestSender.makeRestCallToHTTP(AtRequestSender.java:89)
+	at hms.kite.simulator.rest.AtRequestSender.sendMessage(AtRequestSender.java:51)
+	at hms.kite.simulator.ussd.UssdMessageSender.sendMessage(UssdMessageSender.java:39)
+	at hms.kite.simulator.webui.ui.services.impl.UssdNcsService.sendMessage(UssdNcsService.java:34)
+	at hms.kite.simulator.webui.ui.tab.impl.TabViewUssdImpl$2.buttonClick(TabViewUssdImpl.java:135)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.vaadin.event.ListenerMethod.receiveEvent(ListenerMethod.java:490)
+	at com.vaadin.event.EventRouter.fireEvent(EventRouter.java:162)
+	at com.vaadin.ui.AbstractComponent.fireEvent(AbstractComponent.java:1166)
+	at com.vaadin.ui.Button.fireClick(Button.java:380)
+	at com.vaadin.ui.Button.changeVariables(Button.java:196)
+	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.handleVariableBurst(AbstractCommunicationManager.java:1297)
+	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.handleVariables(AbstractCommunicationManager.java:1217)
+	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.doHandleUidlRequest(AbstractCommunicationManager.java:733)
+	at com.vaadin.terminal.gwt.server.CommunicationManager.handleUidlRequest(CommunicationManager.java:296)
+	at com.vaadin.terminal.gwt.server.AbstractApplicationServlet.service(AbstractApplicationServlet.java:483)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:550)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:486)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:517)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:229)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:970)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:414)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:187)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:904)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+	at org.eclipse.jetty.server.Server.handle(Server.java:347)
+	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:590)
+	at org.eclipse.jetty.server.HttpConnection$RequestHandler.content(HttpConnection.java:1071)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:823)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:220)
+	at org.eclipse.jetty.server.HttpConnection.handle(HttpConnection.java:411)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:535)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:40)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:529)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.interceptor.Fault: Could not send Message.
+	at org.apache.cxf.jaxrs.client.AbstractClient.checkClientException(AbstractClient.java:501)
+	at org.apache.cxf.jaxrs.client.AbstractClient.preProcessResult(AbstractClient.java:488)
+	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:800)
+	... 45 more
+Caused by: org.apache.cxf.interceptor.Fault: Could not send Message.
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:64)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:795)
+	... 45 more
+Caused by: java.net.ConnectException: ConnectException invoking http://localhost:5557/mo-receiver: Connection refused: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1457)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1442)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:658)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+	... 47 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1394)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1336)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:42)
+	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1414)
+	... 50 more
+26 Jan 2017 21:24:54,073 INFO  [][qtp1479085298-37] TabViewUssdImpl - USSD Request sending status : Failed ........
+26 Jan 2017 21:28:07,389 INFO  [][qtp1479085298-39] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94778039893, requestId=1485446287389, vlrAddress=some vlr address, sessionId=1, applicationId=APP_000001, message=*123*, encoding=440, version=1.0}] 
+26 Jan 2017 21:28:07,587 INFO  [][qtp1479085298-39] AtRequestSender - Message Successfully sent
+26 Jan 2017 21:28:07,589 INFO  [][qtp1479085298-39] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+26 Jan 2017 21:30:55,453 INFO  [][qtp1479085298-43] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94778039893, requestId=1485446455453, vlrAddress=some vlr address, sessionId=1, applicationId=APP_000001, message=*123*, encoding=440, version=1.0}] 
+26 Jan 2017 21:30:55,473 INFO  [][qtp1479085298-43] AtRequestSender - Message Successfully sent
+26 Jan 2017 21:30:55,473 INFO  [][qtp1479085298-43] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+26 Jan 2017 21:41:28,452 INFO  [][qtp1479085298-44] AtRequestSender - Sending Request [{ussdOperation=mo-init, sourceAddress=tel:94778039893, requestId=1485447088452, vlrAddress=some vlr address, sessionId=1, applicationId=APP_033027, message=*123*, encoding=440, version=1.0}] 
+26 Jan 2017 21:41:28,465 INFO  [][qtp1479085298-44] AtRequestSender - Message Successfully sent
+26 Jan 2017 21:41:28,466 INFO  [][qtp1479085298-44] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+26 Jan 2017 21:45:22,706 INFO  [][qtp1479085298-51] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94778039893, requestId=1485447322706, vlrAddress=some vlr address, sessionId=2, applicationId=APP_033027, message=*123*, encoding=440, version=1.0}] 
+26 Jan 2017 21:45:22,726 INFO  [][qtp1479085298-51] AtRequestSender - Message Successfully sent
+26 Jan 2017 21:45:22,726 INFO  [][qtp1479085298-51] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+26 Jan 2017 21:57:13,216 INFO  [][qtp1479085298-51] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94778039893, requestId=1485448033216, vlrAddress=some vlr address, sessionId=2, applicationId=APP_033027, message=*123*, encoding=440, version=1.0}] 
+26 Jan 2017 21:57:13,219 ERROR [][qtp1479085298-51] AtRequestSender - Error while sending message to application or application may not available for given port
+org.apache.cxf.jaxrs.client.ClientWebApplicationException: org.apache.cxf.jaxrs.client.ClientWebApplicationException: java.lang.IllegalArgumentException: IllegalArgumentException invoking http://localhost:70000/ussd/ussdap.php: port out of range:70000
+	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:807)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:743)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:717)
+	at org.apache.cxf.jaxrs.client.WebClient.invoke(WebClient.java:262)
+	at org.apache.cxf.jaxrs.client.WebClient.post(WebClient.java:271)
+	at hms.kite.simulator.rest.AtRequestSender.makeRestCallToHTTP(AtRequestSender.java:89)
+	at hms.kite.simulator.rest.AtRequestSender.sendMessage(AtRequestSender.java:51)
+	at hms.kite.simulator.ussd.UssdMessageSender.sendMessage(UssdMessageSender.java:39)
+	at hms.kite.simulator.webui.ui.services.impl.UssdNcsService.sendMessage(UssdNcsService.java:34)
+	at hms.kite.simulator.webui.ui.tab.impl.TabViewUssdImpl$2.buttonClick(TabViewUssdImpl.java:135)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.vaadin.event.ListenerMethod.receiveEvent(ListenerMethod.java:490)
+	at com.vaadin.event.EventRouter.fireEvent(EventRouter.java:162)
+	at com.vaadin.ui.AbstractComponent.fireEvent(AbstractComponent.java:1166)
+	at com.vaadin.ui.Button.fireClick(Button.java:380)
+	at com.vaadin.ui.Button.changeVariables(Button.java:196)
+	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.handleVariableBurst(AbstractCommunicationManager.java:1297)
+	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.handleVariables(AbstractCommunicationManager.java:1217)
+	at com.vaadin.terminal.gwt.server.AbstractCommunicationManager.doHandleUidlRequest(AbstractCommunicationManager.java:733)
+	at com.vaadin.terminal.gwt.server.CommunicationManager.handleUidlRequest(CommunicationManager.java:296)
+	at com.vaadin.terminal.gwt.server.AbstractApplicationServlet.service(AbstractApplicationServlet.java:483)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:550)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:486)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:517)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:229)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:970)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:414)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:187)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:904)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+	at org.eclipse.jetty.server.Server.handle(Server.java:347)
+	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:590)
+	at org.eclipse.jetty.server.HttpConnection$RequestHandler.content(HttpConnection.java:1071)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:823)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:220)
+	at org.eclipse.jetty.server.HttpConnection.handle(HttpConnection.java:411)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:535)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:40)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:529)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.cxf.jaxrs.client.ClientWebApplicationException: java.lang.IllegalArgumentException: IllegalArgumentException invoking http://localhost:70000/ussd/ussdap.php: port out of range:70000
+	at org.apache.cxf.jaxrs.client.AbstractClient.checkClientException(AbstractClient.java:501)
+	at org.apache.cxf.jaxrs.client.AbstractClient.preProcessResult(AbstractClient.java:488)
+	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:800)
+	... 45 more
+Caused by: java.lang.IllegalArgumentException: IllegalArgumentException invoking http://localhost:70000/ussd/ussdap.php: port out of range:70000
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1457)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1447)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:658)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:262)
+	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:795)
+	... 45 more
+Caused by: java.lang.IllegalArgumentException: port out of range:70000
+	at java.net.InetSocketAddress.checkPort(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1394)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1336)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:42)
+	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1414)
+	... 50 more
+26 Jan 2017 21:57:13,271 INFO  [][qtp1479085298-51] TabViewUssdImpl - USSD Request sending status : Failed ........
+26 Jan 2017 21:57:22,517 INFO  [][qtp1479085298-42] AtRequestSender - Sending Request [{ussdOperation=mo-cont, sourceAddress=tel:94778039893, requestId=1485448042517, vlrAddress=some vlr address, sessionId=2, applicationId=APP_033027, message=*123*, encoding=440, version=1.0}] 
+26 Jan 2017 21:57:22,526 INFO  [][qtp1479085298-42] AtRequestSender - Message Successfully sent
+26 Jan 2017 21:57:22,526 INFO  [][qtp1479085298-42] TabViewUssdImpl - USSD Request sending status : SUCCESS.......
+26 Jan 2017 22:02:12,751 INFO  [][WrapperListener_stop_runner] MchoiceSdpSdkStarter - ========================================================
+26 Jan 2017 22:02:12,751 INFO  [][WrapperListener_stop_runner] MchoiceSdpSdkStarter - ============== mChoice SDP Simulator Stopped ===========
+26 Jan 2017 22:02:12,752 INFO  [][WrapperListener_stop_runner] MchoiceSdpSdkStarter - ========================================================
+26 Jan 2017 22:02:13,514 INFO  [][Thread-1] / - Closing Spring root WebApplicationContext

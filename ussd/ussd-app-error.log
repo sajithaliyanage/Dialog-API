@@ -29,3 +29,20 @@ Stack trace:
 #0 C:\xampp\htdocs\ussd\ussdap.php(22): UssdReceiver->__construct()
 #1 {main}
   thrown in C:\xampp\htdocs\ussd\libs\MoUssdReceiver.php on line 40
+[27-Jan-2017 22:57:58 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Exception' with message 'Some of the required parameters are not provided' in C:\xampp\htdocs\Dialog-API\ussd\libs\MoUssdReceiver.php:40
+Stack trace:
+#0 C:\xampp\htdocs\Dialog-API\ussd\ussdap.php(22): UssdReceiver->__construct()
+#1 {main}
+  thrown in C:\xampp\htdocs\Dialog-API\ussd\libs\MoUssdReceiver.php on line 40
+[28-Jan-2017 00:59:59 Europe/Berlin] PHP Notice:  Undefined variable: conn in C:\xampp\htdocs\Dialog-API\ussd\ussdap.php on line 116
+[28-Jan-2017 00:59:59 Europe/Berlin] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in C:\xampp\htdocs\Dialog-API\ussd\ussdap.php on line 116
+[28-Jan-2017 01:04:15 Europe/Berlin] PHP Notice:  Undefined variable: conn in C:\xampp\htdocs\Dialog-API\ussd\ussdap.php on line 116
+[28-Jan-2017 01:04:15 Europe/Berlin] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in C:\xampp\htdocs\Dialog-API\ussd\ussdap.php on line 116
+[28-Jan-2017 01:26:07 Europe/Berlin] PHP Notice:  Undefined variable: conn in C:\xampp\htdocs\Dialog-API\ussd\ussdap.php on line 94
+[28-Jan-2017 01:26:07 Europe/Berlin] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in C:\xampp\htdocs\Dialog-API\ussd\ussdap.php on line 94
+[28-Jan-2017 01:26:42 Europe/Berlin] PHP Notice:  Undefined variable: conn in C:\xampp\htdocs\Dialog-API\ussd\ussdap.php on line 79
+[28-Jan-2017 01:26:42 Europe/Berlin] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in C:\xampp\htdocs\Dialog-API\ussd\ussdap.php on line 79
+[28-Jan-2017 01:26:58 Europe/Berlin] PHP Notice:  Undefined variable: conn in C:\xampp\htdocs\Dialog-API\ussd\ussdap.php on line 84
+[28-Jan-2017 01:26:58 Europe/Berlin] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in C:\xampp\htdocs\Dialog-API\ussd\ussdap.php on line 84
+[28-Jan-2017 01:27:08 Europe/Berlin] PHP Notice:  Undefined variable: conn in C:\xampp\htdocs\Dialog-API\ussd\ussdap.php on line 89
+[28-Jan-2017 01:27:08 Europe/Berlin] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in C:\xampp\htdocs\Dialog-API\ussd\ussdap.php on line 89
